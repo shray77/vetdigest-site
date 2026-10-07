@@ -1,6 +1,6 @@
 {
   "service": "vetdigest",
-  "generated_at": "2026-10-07T14:14:49.192Z",
+  "generated_at": "2026-10-07T14:19:38.942Z",
   "items": [
     {
       "fingerprint": "a9de1f44981c264a97ccfbd59a8bfd396cf7af88",
@@ -9,7 +9,7 @@
       "title": "Staphylococcus aureus in bovine intramammary infections: A global systematic review and meta-analysis of prevalence and antimicrobial resistance patterns.",
       "url": "https://doi.org/10.1016/j.nmni.2026.101860",
       "published_at": "2026-12-01T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "— (ошибка AI: empty AI response)"
     },
     {
       "fingerprint": "6179e6b4c486100391cb1dfa6fc32e541da06563",
@@ -18,7 +18,7 @@
       "title": "Canine parvovirus in Africa: Explaining persistent disease despite vaccination.",
       "url": "https://doi.org/10.1016/j.vas.2026.100853",
       "published_at": "2026-12-01T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "— (ошибка AI: empty AI response)"
     },
     {
       "fingerprint": "ede9daa1c074121be620c61e3d7ce14e04467f5d",
@@ -27,7 +27,7 @@
       "title": "Highly efficient RPA product degradation and expanded PAM recognition enable RPA-Cas3 detection of Clonorchis sinensis.",
       "url": "https://doi.org/10.1016/j.aca.2026.346191",
       "published_at": "2026-11-15T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "1) Разработан метод детек"
     },
     {
       "fingerprint": "93befbf32c833d2ca078a8ddd9015a2d881972e9",
@@ -36,7 +36,7 @@
       "title": "Development of a recombinant glycoprotein E-based ELISA for detection of antibodies against Bovine alphaherpesvirus 1: a DIVA compliant.",
       "url": "https://doi.org/10.1007/s11259-026-11545-1",
       "published_at": "2026-10-07T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "1) Разработан ELISA на основе рекомбинантного гликопротеина E для дифференциации инфицированных и вакциниров"
     },
     {
       "fingerprint": "47d114d3a3dbfbb2bae76d44a4197f6788b73190",
@@ -45,7 +45,7 @@
       "title": "Chicken cathelicidin-3 protected mice from avian pathogenic Escherichia coli infection mediated by triggering chemokine CCL3 pathway.",
       "url": "https://doi.org/10.1186/s13567-026-01844-5",
       "published_at": "2026-10-06T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "1) Исследовали эффективность куриных кателицидинов cCATH-1 и cCATH-3 против инфекции APEC у мышей.  \n2) cCATH-3 обеспечил 80% выживаемости, в отличие от 20% у cCATH-1, через активацию пути CCL3 и усиление бактерицидной активности макрофагов.  \n3) Открытие поддерживает использование гост-защитных пептидов как альтернативы антибиотикам в борьбе с колибактериозом."
     },
     {
       "fingerprint": "69b4d58b32d8faf3763a89204b83bfbffca25a28",
@@ -54,7 +54,7 @@
       "title": "Phage Display in Veterinary Infectious Diseases: From Molecular Recognition to Diagnostic Validation and Protective Efficacy.",
       "url": "https://doi.org/10.1016/j.micpath.2026.108867",
       "published_at": "2026-10-06T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "— (ошибка AI: empty AI response)"
     },
     {
       "fingerprint": "b6752872e8ca78ebc16e7508d6392e4fea32bd34",
@@ -63,7 +63,7 @@
       "title": "The canine tumour micro-environment and advances in antitumour therapy in canine melanoma.",
       "url": "https://doi.org/10.1016/j.tvjl.2026.106919",
       "published_at": "2026-10-06T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "— (ошибка AI: empty AI response)"
     },
     {
       "fingerprint": "11f0cde42cb0e71cbcd7bda26ac86090ac9f228b",
@@ -72,7 +72,7 @@
       "title": "Using Theory-Based Frameworks to Identify Barriers, Facilitators, Expectations, and Willingness to Pay for Online Medical Consultation Services in China: Qualitative Study.",
       "url": "https://doi.org/10.2196/96448",
       "published_at": "2026-10-06T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "1) Исследовали барьеры, факторы, ожидания и готовность платить за ИИ-поддержанные онлайн-консультации в Китае.  \n2) Готовность платить варьировалась от 0 до 200 юаней, с высокими значениями у пользователей с опытом; ключевыми факторами были риски и преимущества.  \n3) Результаты помогут разработать более целевые ценообразование и услуги, учитывая предпочтения пациентов и улучшая регулирование цифровых платформ."
     },
     {
       "fingerprint": "0ae3e56876e228eea94e44d200d9e78bb59b7750",
@@ -81,7 +81,7 @@
       "title": "Targeting the Cav1.2-KCa1.1 axis prevents rabies virus internalization and protects against lethal infection.",
       "url": "https://doi.org/10.1371/journal.ppat.1014675",
       "published_at": "2026-10-06T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "— (ошибка AI: empty AI response)"
     },
     {
       "fingerprint": "843d880f5bc1399ddeff95ad76f236396eb2c45e",
@@ -90,7 +90,7 @@
       "title": "Clonal isolation of Borrelia miyamotoi identifies multiple infection phenotypes and potential novel virulence determinants.",
       "url": "https://doi.org/10.1128/spectrum.01526-26",
       "published_at": "2026-10-06T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "— (ошибка AI: empty AI response)"
     },
     {
       "fingerprint": "ed752325faf12910ca7f757f309cf9ce48c888ef",
@@ -99,7 +99,7 @@
       "title": "Further evidence of hepatitis D occurring in the absence of hepatitis B.",
       "url": "https://doi.org/10.1016/j.jcv.2026.106016",
       "published_at": "2026-10-04T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "— (ошибка AI: empty AI response)"
     },
     {
       "fingerprint": "bda41a6e91040c9ab6d5fed2a31db0a8189d74fd",
@@ -108,7 +108,7 @@
       "title": "Predicting probability of cure in bovine clinical mastitis.",
       "url": "https://doi.org/10.1016/j.prevetmed.2026.107042",
       "published_at": "2026-10-02T00:00:00.000Z",
-      "takeaways": "— (не удалось обработать, попробуем в следующем выпуске)"
+      "takeaways": "1) Исследовали модель для прогнозирования вероятности выздоровления коров от клинического мастита на основе данных о предыдущих случаях и показателях молока.  \n2) Модель учитывала историю мастита, уровень СКК и количество случаев, с калибровкой вероятностей, но точность классификации составила 0.67.  \n3) Позволяет принимать обоснованные решения по лечению без идентификации патогенов, снижая использование антибиотиков."
     }
   ]
 }

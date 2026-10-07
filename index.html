@@ -4,67 +4,209 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VetDigest — мировая ветеринария в трёх тезисах</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
 <style>
-  :root { color-scheme: dark; }
+  :root {
+    color-scheme: dark;
+    --bg: #0b0e14; --surface: #12161f; --surface2: #171c27; --border: #1f2530;
+    --text: #e8ecf3; --muted: #93a0b4; --faint: #5d6a7d;
+    --accent: #34d399; --accent-dim: rgba(52,211,153,.12);
+    --blue: #7dd3fc; --warn: #fbbf24; --err: #f87171;
+    --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
   * { box-sizing: border-box; }
-  body { background: #0d1117; color: #e6edf3; font: 15px/1.55 system-ui, sans-serif; margin: 0; padding: 24px; }
-  header { margin-bottom: 20px; }
-  h1 { font-size: 22px; margin: 0 0 4px; }
-  #meta { color: #8b949e; font-size: 13px; }
-  .card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; max-width: 860px; }
-  .card h2 { font-size: 16px; margin: 0 0 8px; line-height: 1.4; }
-  .card h2 a { color: #58a6ff; text-decoration: none; }
-  .card h2 a:hover { text-decoration: underline; }
-  .takeaways { white-space: pre-wrap; color: #c9d1d9; margin: 0; }
-  .foot { color: #8b949e; font-size: 12px; margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap; }
-  .date-sep { color: #58a6ff; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; margin: 26px 0 10px; }
-  #status { max-width: 860px; margin-top: 30px; border-top: 1px solid #21262d; padding-top: 14px; font-size: 13px; color: #8b949e; }
-  #status b { color: #e6edf3; }
-  .ok { color: #3fb950; } .err { color: #f85149; } .stale { color: #d29922; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0; }
+
+  header.top {
+    background: linear-gradient(180deg, rgba(52,211,153,.06), transparent 70%);
+    border-bottom: 1px solid var(--border); padding: 28px 0 22px;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 16px; }
+  .logo {
+    width: 52px; height: 52px; border-radius: 14px; background: var(--accent-dim);
+    border: 1px solid rgba(52,211,153,.35); display: grid; place-items: center; font-size: 26px;
+  }
+  h1 { font-size: 24px; margin: 0; letter-spacing: -.02em; }
+  .brand p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  .live { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; font-family: var(--mono); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--faint); flex: none; }
+  .dot.ok { background: var(--accent); box-shadow: 0 0 8px rgba(52,211,153,.7); }
+  .dot.err { background: var(--err); }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 24px 0 8px; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+  .stat b { display: block; font-size: 24px; font-weight: 700; letter-spacing: -.02em; }
+  .stat span { color: var(--muted); font-size: 12.5px; }
+
+  .filters { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 6px; }
+  #q {
+    flex: 1 1 260px; background: var(--surface); border: 1px solid var(--border); color: var(--text);
+    border-radius: 10px; padding: 9px 14px; font-size: 14px; outline: none;
+  }
+  #q:focus { border-color: rgba(52,211,153,.5); }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip-btn {
+    background: var(--surface); border: 1px solid var(--border); color: var(--muted);
+    font: 12px var(--mono); border-radius: 999px; padding: 6px 12px; cursor: pointer; transition: .15s;
+  }
+  .chip-btn:hover { color: var(--text); border-color: #2c3543; }
+  .chip-btn.active { color: var(--accent); border-color: rgba(52,211,153,.45); background: var(--accent-dim); }
+
+  .date-sep {
+    display: flex; align-items: center; gap: 12px; margin: 30px 0 12px;
+    color: var(--accent); font-size: 12.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  }
+  .date-sep::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent-dim);
+    border-radius: 14px; padding: 18px 20px 14px; margin-bottom: 14px; transition: border-color .15s;
+  }
+  .card:hover { border-left-color: var(--accent); }
+  .card-top { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+  .chip {
+    font: 11.5px var(--mono); color: var(--blue); background: rgba(125,211,252,.08);
+    border: 1px solid rgba(125,211,252,.18); padding: 3px 10px; border-radius: 999px;
+  }
+  .pub { color: var(--faint); font-size: 12.5px; font-family: var(--mono); white-space: nowrap; }
+  .card h2 { font-size: 17px; line-height: 1.45; margin: 0 0 12px; font-weight: 650; }
+  .card h2 a { color: var(--text); text-decoration: none; }
+  .card h2 a:hover { color: var(--accent); }
+  .takeaways { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .takeaways li { display: flex; gap: 10px; color: #c7d0dd; font-size: 14.5px; }
+  .t-num {
+    flex: none; width: 20px; height: 20px; border-radius: 6px; margin-top: 2px;
+    background: var(--accent-dim); color: var(--accent); font: 700 11px var(--mono);
+    display: grid; place-items: center;
+  }
+  .card-foot { display: flex; gap: 14px; align-items: center; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+  .card-foot a, .card-foot span { color: var(--faint); font-size: 12.5px; font-family: var(--mono); text-decoration: none; }
+  .card-foot a:hover { color: var(--blue); }
+  .empty { color: var(--muted); text-align: center; padding: 48px 0; }
+  .empty b { display: block; font-size: 18px; color: var(--text); margin-bottom: 6px; }
+
+  footer { border-top: 1px solid var(--border); margin-top: 40px; padding: 18px 0 30px; }
+  .foot { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--faint); }
+  .foot a { color: var(--muted); text-decoration: none; }
+  .foot a:hover { color: var(--accent); }
 </style>
 </head>
 <body>
-<header>
-  <h1>🐾 VetDigest</h1>
-  <div id="meta">загрузка…</div>
+<header class="top">
+  <div class="wrap topbar">
+    <div class="brand">
+      <div class="logo">🐾</div>
+      <div>
+        <h1>VetDigest</h1>
+        <p>Мировая ветеринария — в трёх тезисах на русском. PubMed → Workers AI → этот экран.</p>
+      </div>
+    </div>
+    <div class="live" id="meta"><span class="dot"></span><span>загрузка…</span></div>
+  </div>
 </header>
-<div id="feed"></div>
-<div id="status"></div>
+
+<main class="wrap">
+  <section class="stats" id="stats"></section>
+  <section class="filters">
+    <input id="q" type="search" placeholder="Поиск по заголовкам и тезисам…">
+    <div class="chips" id="chips"></div>
+  </section>
+  <section id="feed"></section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>данные: <a href="./digest.json">digest.json</a>, обновляется воркером по крону</span>
+    <a href="https://shray77.github.io/rss-core-site/">статус конвейера →</a>
+    <a href="https://github.com/shray77/vetdigest">репозиторий</a>
+  </div>
+</footer>
+
 <script>
-const fmtDay = (s) => new Date(s + 'T00:00:00Z').toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
-const fmtDT = (s) => s ? new Date(s.includes('T') ? s : s.replace(' ', 'T') + 'Z').toLocaleString('ru-RU') : '—';
+let ALL = [], q = "", src = "";
 
-fetch('./digest.json', { cache: 'no-store' })
-  .then(r => r.json())
-  .then(j => {
-    document.getElementById('meta').textContent =
-      'обновлено: ' + new Date(j.generated_at).toLocaleString('ru-RU') + ' · всего записей: ' + j.items.length;
-    const feed = document.getElementById('feed');
-    if (!j.items.length) { feed.innerHTML = '<div class="card">Пока пусто — первый дайджест соберётся утром по крону.</div>'; return; }
-    let lastDate = '';
-    for (const it of j.items) {
-      if (it.digest_date !== lastDate) {
-        lastDate = it.digest_date;
-        feed.insertAdjacentHTML('beforeend', `<div class="date-sep">выпуск ${fmtDay(it.digest_date)}</div>`);
-      }
-      feed.insertAdjacentHTML('beforeend',
-        `<div class="card"><h2><a href="${it.url}" target="_blank" rel="noopener">${it.title}</a></h2>` +
-        `<p class="takeaways">${it.takeaways}</p>` +
-        `<div class="foot"><span>источник: ${it.source_id}</span><span>опубликовано: ${fmtDT(it.published_at)}</span></div></div>`);
-    }
-  })
-  .catch(e => { document.getElementById('meta').textContent = 'не удалось загрузить digest.json: ' + e; });
+const timeAgo = (iso) => {
+  const ms = Date.now() - new Date(iso).getTime();
+  if (isNaN(ms)) return "";
+  const m = Math.floor(ms / 60000);
+  if (m < 1) return "только что";
+  if (m < 60) return m + " мин назад";
+  const h = Math.floor(m / 60);
+  if (h < 24) return h + " ч назад";
+  return Math.floor(h / 24) + " дн назад";
+};
+const fmtDay = (s) => new Date(s + "T00:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", year: "numeric" });
+const fmtDT = (s) => s ? new Date(s.includes("T") ? s : s.replace(" ", "T") + "Z").toLocaleDateString("ru-RU", { day: "numeric", month: "short" }) : "—";
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-fetch('https://shray77.github.io/rss-core-site/status.json', { cache: 'no-store' })
-  .then(r => r.ok ? r.json() : Promise.reject(r.status))
-  .then(j => {
-    document.getElementById('status').innerHTML =
-      '<b>Конвейер (rss-core):</b><br>' + j.sources.map(s => {
-        const cls = s.last_status === 'ok' ? (s.stale ? 'stale' : 'ok') : 'err';
-        return `${s.name}: <span class="${cls}">${s.last_status === 'ok' ? (s.stale ? 'нет данных' : 'ok') : 'ошибка'}</span> · записей: ${s.entries} · успех: ${fmtDT(s.last_success_at)}`;
-      }).join('<br>');
-  })
-  .catch(() => { document.getElementById('status').textContent = 'Конвейер (rss-core): статус недоступен.'; });
+function parseTakeaways(text) {
+  return String(text).split(/\n+/).map(l => l.trim()).filter(Boolean)
+    .map(l => { const m = l.match(/^(\d)\)\s*(.*)$/); return m ? { n: +m[1], t: m[2] } : { n: null, t: l }; });
+}
+
+function card(it) {
+  const items = parseTakeaways(it.takeaways)
+    .map(t => `<li>${t.n ? `<span class="t-num">${t.n}</span>` : ""}<span>${esc(t.t)}</span></li>`).join("");
+  return `<article class="card">
+    <div class="card-top"><span class="chip">${esc(it.source_id.replace("pubmed-", "PubMed: "))}</span><span class="pub">${fmtDT(it.published_at)}</span></div>
+    <h2><a href="${it.url}" target="_blank" rel="noopener">${esc(it.title)}</a></h2>
+    <ol class="takeaways">${items}</ol>
+    <div class="card-foot"><a href="${it.url}" target="_blank" rel="noopener">открыть ↗</a><span>${fmtDT(it.created_at)}</span></div>
+  </article>`;
+}
+
+function render() {
+  const feed = document.getElementById("feed");
+  const list = ALL.filter(it =>
+    (!src || it.source_id === src) &&
+    (!q || (it.title + " " + it.takeaways).toLowerCase().includes(q)));
+  if (!list.length) {
+    feed.innerHTML = `<div class="empty"><b>Ничего не нашлось</b>Попробуй другой запрос или сбрось фильтр.</div>`;
+    return;
+  }
+  let html = "", last = "";
+  for (const it of list) {
+    if (it.digest_date !== last) { last = it.digest_date; html += `<div class="date-sep">выпуск ${fmtDay(it.digest_date)}</div>`; }
+    html += card(it);
+  }
+  feed.innerHTML = html;
+}
+
+function renderMeta(j) {
+  const failed = j.items.filter(i => i.takeaways.includes("ошибка AI")).length;
+  document.getElementById("meta").innerHTML =
+    `<span class="dot ${failed < j.items.length ? "ok" : "err"}"></span>` +
+    `<span>обновлено ${timeAgo(j.generated_at)}</span>`;
+  const sources = [...new Set(j.items.map(i => i.source_id))];
+  document.getElementById("stats").innerHTML =
+    `<div class="stat"><b>${j.items.length}</b><span>статей в дайджесте</span></div>` +
+    `<div class="stat"><b>${sources.length}</b><span>активных лент PubMed</span></div>` +
+    `<div class="stat"><b>${failed ? "⚠ " + failed : "0"}</b><span>ошибок обработки</span></div>`;
+}
+
+function renderChips() {
+  const sources = [...new Set(ALL.map(i => i.source_id))];
+  document.getElementById("chips").innerHTML =
+    `<button class="chip-btn ${!src ? "active" : ""}" data-s="">все</button>` +
+    sources.map(s => `<button class="chip-btn ${src === s ? "active" : ""}" data-s="${s}">${s.replace("pubmed-", "")}</button>`).join("");
+  document.querySelectorAll(".chip-btn").forEach(b => b.onclick = () => { src = b.dataset.s; renderChips(); render(); });
+}
+
+async function refresh() {
+  try {
+    const j = await (await fetch("./digest.json", { cache: "no-store" })).json();
+    ALL = j.items || [];
+    renderMeta(j); renderChips(); render();
+  } catch (e) {
+    document.getElementById("meta").innerHTML = `<span class="dot err"></span><span>digest.json недоступен</span>`;
+  }
+}
+document.getElementById("q").oninput = (e) => { q = e.target.value.toLowerCase().trim(); render(); };
+refresh();
+setInterval(refresh, 5 * 60 * 1000);
 </script>
 </body>
 </html>

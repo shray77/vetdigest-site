@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VetDigest — мировая ветеринария в трёх тезисах</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { background: #0d1117; color: #e6edf3; font: 15px/1.55 system-ui, sans-serif; margin: 0; padding: 24px; }
+  header { margin-bottom: 20px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  #meta { color: #8b949e; font-size: 13px; }
+  .card { background: #161b22; border: 1px solid #21262d; border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; max-width: 860px; }
+  .card h2 { font-size: 16px; margin: 0 0 8px; line-height: 1.4; }
+  .card h2 a { color: #58a6ff; text-decoration: none; }
+  .card h2 a:hover { text-decoration: underline; }
+  .takeaways { white-space: pre-wrap; color: #c9d1d9; margin: 0; }
+  .foot { color: #8b949e; font-size: 12px; margin-top: 10px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .date-sep { color: #58a6ff; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: .08em; margin: 26px 0 10px; }
+  #status { max-width: 860px; margin-top: 30px; border-top: 1px solid #21262d; padding-top: 14px; font-size: 13px; color: #8b949e; }
+  #status b { color: #e6edf3; }
+  .ok { color: #3fb950; } .err { color: #f85149; } .stale { color: #d29922; }
+</style>
+</head>
+<body>
+<header>
+  <h1>🐾 VetDigest</h1>
+  <div id="meta">загрузка…</div>
+</header>
+<div id="feed"></div>
+<div id="status"></div>
+<script>
+const fmtDay = (s) => new Date(s + 'T00:00:00Z').toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
+const fmtDT = (s) => s ? new Date(s.includes('T') ? s : s.replace(' ', 'T') + 'Z').toLocaleString('ru-RU') : '—';
+
+fetch('./digest.json', { cache: 'no-store' })
+  .then(r => r.json())
+  .then(j => {
+    document.getElementById('meta').textContent =
+      'обновлено: ' + new Date(j.generated_at).toLocaleString('ru-RU') + ' · всего записей: ' + j.items.length;
+    const feed = document.getElementById('feed');
+    if (!j.items.length) { feed.innerHTML = '<div class="card">Пока пусто — первый дайджест соберётся утром по крону.</div>'; return; }
+    let lastDate = '';
+    for (const it of j.items) {
+      if (it.digest_date !== lastDate) {
+        lastDate = it.digest_date;
+        feed.insertAdjacentHTML('beforeend', `<div class="date-sep">выпуск ${fmtDay(it.digest_date)}</div>`);
+      }
+      feed.insertAdjacentHTML('beforeend',
+        `<div class="card"><h2><a href="${it.url}" target="_blank" rel="noopener">${it.title}</a></h2>` +
+        `<p class="takeaways">${it.takeaways}</p>` +
+        `<div class="foot"><span>источник: ${it.source_id}</span><span>опубликовано: ${fmtDT(it.published_at)}</span></div></div>`);
+    }
+  })
+  .catch(e => { document.getElementById('meta').textContent = 'не удалось загрузить digest.json: ' + e; });
+
+fetch('https://shray77.github.io/rss-core-site/status.json', { cache: 'no-store' })
+  .then(r => r.ok ? r.json() : Promise.reject(r.status))
+  .then(j => {
+    document.getElementById('status').innerHTML =
+      '<b>Конвейер (rss-core):</b><br>' + j.sources.map(s => {
+        const cls = s.last_status === 'ok' ? (s.stale ? 'stale' : 'ok') : 'err';
+        return `${s.name}: <span class="${cls}">${s.last_status === 'ok' ? (s.stale ? 'нет данных' : 'ok') : 'ошибка'}</span> · записей: ${s.entries} · успех: ${fmtDT(s.last_success_at)}`;
+      }).join('<br>');
+  })
+  .catch(() => { document.getElementById('status').textContent = 'Конвейер (rss-core): статус недоступен.'; });
+</script>
+</body>
+</html>

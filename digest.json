@@ -1,7 +1,115 @@
 {
   "service": "vetdigest",
-  "generated_at": "2026-10-07T14:23:00.951Z",
+  "generated_at": "2026-10-08T07:01:33.986Z",
   "items": [
+    {
+      "fingerprint": "8f6b6629db03a8887397dab9397d340a6e7399f2",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-vet-infectious",
+      "title": "Gastrointestinal and hepatic endoparasites of domestic guinea pigs (Cavia porcellus (Linnaeus, 1758)): Diversity, diagnosis, epidemiology, and clinical relevance.",
+      "url": "https://doi.org/10.1016/j.vetpar.2026.110938",
+      "published_at": "2026-10-02T00:00:00.000Z",
+      "takeaways": "1) Исследовали разнообразие, диагностику, эпидемиологию и клиническое значение эндопаразитов желудочно-кишечного тракта и печени у домашних морских свинок.\n2) Основными паразитами, обнаруженными у морских свинок, являются Paraspidodera uncinata и Eimeria spp., а молекулярные исследования уточнили интерпретацию Cryptosporidium, Giardia и Balantioides.\n3) Это требует от ветеринарных врачей более точного подхода к диагностике и интерпретации результатов, а также необходимости стандартизации методов исследования для сравнения региональных показателей распространения паразитов."
+    },
+    {
+      "fingerprint": "5acbad11d0827d96679be7b56e1c746daaf5e45a",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-vet-infectious",
+      "title": "Integrated molecular, immunological, oxidative stress, and histopathological evaluation of Ascaridia galli infection in chickens.",
+      "url": "https://doi.org/10.1016/j.vetpar.2026.110936",
+      "published_at": "2026-10-02T00:00:00.000Z",
+      "takeaways": "1) Исследовали молекулярные, иммунологические, окислительные и гистопатологические эффекты заражения Ascaridia galli у кур.\n2) Основным результатом стало обнаружение заражения у 45% кур с значительным увеличением уровня IL-6, IL-8, IL-10, TGF-β и IFN-γ, а также изменением окислительных и антиоксидантных маркеров.\n3) Это исследование меняет подход к диагностике и лечению заражения Ascaridia galli у кур, подчеркивая важность учета иммунных и окислительных реакций при разработке эффективных терапевтических стратегий."
+    },
+    {
+      "fingerprint": "a4abf1679261b369fba7272d1d6e705993707278",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-bovine-mastitis",
+      "title": "Decoding the lncRNA landscape in bovine mastitis: insights into immune regulation and gene networks underlying host response.",
+      "url": "https://doi.org/10.1186/s40104-026-01500-0",
+      "published_at": "2026-10-01T00:00:00.000Z",
+      "takeaways": "1) Исследовали профиль экспрессии длинных некодирующих РНК (lncРНК) в подклинических внутригрудных инфекциях (sIMI) у 31 коровы породы Холштейн, вызванных двумя патогенами: Streptococcus agalactiae и Prototheca spp.\n2) Было выявлено 211-353 различных lncРНК в зависимости от типа инфекции, большинство из которых расположены в генных регионах и ранее не были аннотированы в геноме крупного рогатого скота.\n3) Результаты могут изменить подход к диагностике и лечению мастита у коров, поскольку выявленные lncРНК могут играть ключевую роль в регуляции иммунных и метаболических путей, и их изучение может привести к разработке новых терапевтических стратегий."
+    },
+    {
+      "fingerprint": "5cdfec539a12eceeae8bbbfbdc91cb22651bd04b",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-bovine-mastitis",
+      "title": "Draft genome sequence of an Enterococcus camelliae strain MBBL_MP6 isolated from a crossbred Holstein Friesian cow diagnosed with clinical mastitis.",
+      "url": "https://doi.org/10.1128/mra.00497-26",
+      "published_at": "2026-09-29T00:00:00.000Z",
+      "takeaways": "1) Исследовалось геномное последовательность штамма Enterococcus camelliae, выделенного из молока коровы с клиническим маститом.\n2) Геном состоит из 62 контигов, общей длиной 2 350 649 пар оснований, с содержанием ГЦ 38,5% и покрытием в 190 раз, и содержит только один ген антибиотикорезистентности.\n3) Это открытие может изменить подход к лечению мастита у коров, поскольку выявленный штамм имеет ограниченный спектр антибиотикорезистентности."
+    },
+    {
+      "fingerprint": "14abc44459fe41457af5934c5589fb08f39457a1",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-bovine-mastitis",
+      "title": "Avoidance distance in dairy cattle as a behavioural indicator of fear responses: the confounding role of clinical health status in two Algerian dairy farms.",
+      "url": "https://doi.org/10.1007/s11250-026-05352-8",
+      "published_at": "2026-09-28T00:00:00.000Z",
+      "takeaways": "1) Исследовалось поведение крупного рогатого скота на двух фермах в Алжире, а именно расстояние избегания как индикатор страха перед людьми.\n2) Основным результатом стало то, что все 15 животных с маститом на одной из ферм демонстрировали избегание, а на другой ферме 97,2% животных были толерантны, что указывает на сильную связь между здоровьем и поведением.\n3) Это исследование меняет практику тем, что подчеркивает важность учета состояния здоровья животных при оценке их поведения и отношения к людям, что может повлиять на подходы к улучшению благополучия и продуктивности животных."
+    },
+    {
+      "fingerprint": "fc85a7b11b450b8b80d1218d50b3335a909231f6",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-canine-parvovirus",
+      "title": "Alterations in trace element homeostasis in dogs with parvoviral enteritis.",
+      "url": "https://doi.org/10.1002/vetr.71215",
+      "published_at": "2026-09-28T00:00:00.000Z",
+      "takeaways": "1) Исследовалось изменение баланса микроэлементов в крови собак, больных парвовирусным энтеритом.\n2) У собак с парвовирусным энтеритом обнаружены изменения концентраций железа, селена и молибдена в плазме крови.\n3) Эти результаты могут изменить подход к лечению и питанию собак с парвовирусным энтеритом, подчеркивая важность микронутриентов в иммунных реакциях и восстановлении."
+    },
+    {
+      "fingerprint": "2b67f967c93de1bccf6bcaf0370fcb318b29902d",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-canine-parvovirus",
+      "title": "Does Neoplastic Disease Negatively Affect Serum Antibody Titers Against Core Vaccines in Dogs?",
+      "url": "https://doi.org/10.3390/vaccines14090822",
+      "published_at": "2026-09-18T00:00:00.000Z",
+      "takeaways": "1) Исследовалось влияние неопластических заболеваний на уровень антител против основных вакцин у собак.\n2) У 93,3% собак обнаружены защитные антитела против парвовируса, у 86,6% против аденовируса и у 79,2% против вируса чумы.\n3) Это означает, что собакам с неопластическими заболеваниями не требуется срочная ревакцинация, и ветеринары могут сосредоточиться на других аспектах лечения."
+    },
+    {
+      "fingerprint": "e7ce993c8dfa4ab0157ba0f0382293e5af28192e",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-canine-parvovirus",
+      "title": "A Recombinant RABV-G-Based Chemiluminescence Immunoassay for Quantitative Detection of Rabies Virus Antibodies.",
+      "url": "https://doi.org/10.3390/vaccines14090814",
+      "published_at": "2026-09-16T00:00:00.000Z",
+      "takeaways": "1) Исследовалось применение хемилюминесцентного иммунотеста для количественного обнаружения антител к вирусу бешенства.\n2) Тест показал чувствительность 94,4% и специфичность 97,1%, с порогом обнаружения 0,24 МЕ/мл и сильной корреляцией с золотым стандартом (r = 0,9636).\n3) Это позволяет заменить трудоемкие и требующие живого вируса методы на более быстрый и безопасный тест, что упрощает мониторинг иммунитета и контроль заражения бешенством."
+    },
+    {
+      "fingerprint": "2b9c217dd6c75c6dd9d85ffbf81c1fbdaa6f3cfe",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-canine-parvovirus",
+      "title": "Molecular Characterization of a Feline Panleukopenia Virus Strain Isolated from a Dog with Clinical Gastroenteritis in Spain.",
+      "url": "https://doi.org/10.3390/ani16182860",
+      "published_at": "2026-09-11T00:00:00.000Z",
+      "takeaways": "1) Исследовалось влияние штамма вируса панлейкопении кошек (FPV) на собаку с клинической гастроэнтеритом в Испании.\n2) Была обнаружена высокая гомология исследуемого штамма с местными кошачьими штаммами FPV, и выявлена мутация изолейцина в треонин (I101T) в белке VP2.\n3) Это исследование подчеркивает необходимость постоянного геномного мониторинга этих высокоэволюционирующих вирусов для отслеживания событий переключения хозяина и потенциально изменит подходы к диагностике и профилактике заболеваний."
+    },
+    {
+      "fingerprint": "22c8a7135255ec6d96d13ce9d2b7835b60c05d19",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-bovine-mastitis",
+      "title": "Sodium Butyrate Mitigates Pseudomonas aeruginosa Infection in bMECs Associated with the Modulation of TLR4/MAPK Pathway and Improvement of Autophagic Markers.",
+      "url": "https://doi.org/10.3390/vetsci13090925",
+      "published_at": "2026-09-08T00:00:00.000Z",
+      "takeaways": "1) Исследовали влияние натрия бутирата на инфекцию Pseudomonas aeruginosa в эпителиальных клетках молочной железы крупного рогатого скота.\n2) Применение 0,5 ммоль/л натрия бутирата в течение 18 часов перед заражением Pseudomonas aeruginosa (1 × 10^7 КОЕ/мл, 6 часов) привело к значительному снижению апоптоза клеток и гиперсекреции про-воспалительных цитокинов.\n3) Это открытие меняет подход к лечению мастита у крупного рогатого скота, предлагая натрий бутират как потенциальную неантибиотическую терапию для профилактики и лечения заболевания."
+    },
+    {
+      "fingerprint": "05d8304b866f21fdec641dbbed74e42ea1fa69fa",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-canine-parvovirus",
+      "title": "Molecular Mechanisms Between Canine Parvovirus 2 and Host Interactions: From Viruses to Innate Immune Signaling Pathways.",
+      "url": "https://doi.org/10.3390/v18090985",
+      "published_at": "2026-09-08T00:00:00.000Z",
+      "takeaways": "1) Исследовалось взаимодействие между вирусом парвовируса 2 собак и иммунной системой хозяина.\n2) Главный результат — вирус регулирует активацию и ингибирование Toll-like рецепторов, влияя на путь сигнализации MyD88/TRIF и модулируя активацию NF-κB и интерферонов.\n3) Это меняет подход к разработке вакцин и пониманию иммунной эvasion, что может быть полезно для более точного контроля вируса и оценки зоонотического риска."
+    },
+    {
+      "fingerprint": "1e0cb9e6eaf6df321857107ff83ac1af213a7ac9",
+      "digest_date": "2026-10-08",
+      "source_id": "pubmed-vet-infectious",
+      "title": "A divergent betacoronavirus with a functional furin cleavage site in South American bats.",
+      "url": "https://doi.org/10.1038/s41467-026-77599-6",
+      "published_at": "2026-09-05T00:00:00.000Z",
+      "takeaways": "1) Исследовалось разнообразие бетакоронавирусов у летучих мышей в Южной Америке.\n2) Был обнаружен новый подрод бетакоронавируса с функциональным сайтом расщепления фурина в белке шипа, имеющим мотив RDAR, отличающийся от мотива RRAR у SARS-CoV-2 только одним аминокислотным остатком.\n3) Это открытие расширяет понимание филогенетического и функционального разнообразия коронавирусов у летучих мышей, что может быть важно для оценки зоонотического потенциала этих вирусов."
+    },
     {
       "fingerprint": "a9de1f44981c264a97ccfbd59a8bfd396cf7af88",
       "digest_date": "2026-10-07",

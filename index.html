@@ -129,6 +129,18 @@
   .empty { color: var(--muted); text-align: center; padding: 48px 0; }
   .empty b { display: block; font-size: 18px; color: var(--text); margin-bottom: 6px; }
 
+  .skel { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 18px 20px; margin-bottom: 14px; }
+  .sk { position: relative; overflow: hidden; background: #1a2030; border-radius: 6px; height: 12px; margin-bottom: 10px; }
+  .sk::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(90deg, transparent, rgba(232,236,243,.07), transparent); animation: shimmer 1.4s infinite; }
+  @keyframes shimmer { 100% { transform: translateX(100%); } }
+  .sk.t { height: 16px; width: 68%; }
+  .sk.w40 { width: 40%; }
+  .sk.w85 { width: 85%; }
+  .imp { font: 700 10.5px var(--mono); padding: 2px 8px; border-radius: 999px; border: 1px solid; cursor: help; }
+  .imp.hi { color: var(--accent); background: var(--accent-dim); border-color: rgba(52,211,153,.4); }
+  .imp.mid { color: var(--blue); background: rgba(125,211,252,.08); border-color: rgba(125,211,252,.2); }
+  .imp.lo { color: var(--faint); background: #171c27; border-color: var(--border); }
+
   #totop {
     position: fixed; right: 20px; bottom: 20px; width: 44px; height: 44px; border-radius: 50%;
     background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 18px;
@@ -174,7 +186,11 @@
     <button class="chip-btn" id="fold-all">свернуть все</button>
     <span class="count" id="count"></span>
   </div>
-  <section id="feed"></section>
+  <section id="feed">
+    <div class="skel"><div class="sk w40"></div><div class="sk t"></div><div class="sk"></div><div class="sk w85"></div></div>
+    <div class="skel"><div class="sk w40"></div><div class="sk t"></div><div class="sk w85"></div></div>
+    <div class="skel"><div class="sk w40"></div><div class="sk t"></div><div class="sk"></div><div class="sk w85"></div></div>
+  </section>
 </main>
 
 <footer>
@@ -216,11 +232,13 @@ function parseTakeaways(text) {
 
 function card(it, hero) {
   const items = parseTakeaways(it.takeaways)
-    .map(t => `<li>${t.n ? `<span class="t-num">${t.n}</span>` : ""}<span>${esc(t.t)}</span></li>`).join("");
+    .map(t => `<li>${t.n ? `<span class="t-num">${t.n}</span>` : ""}<span>${hi(esc(t.t))}</span></li>`).join("");
+  const imp = it.impact == null ? "" :
+    `<span class="imp ${it.impact >= 70 ? "hi" : it.impact >= 50 ? "mid" : "lo"}" title="скор влияния на практику: цифры/дозы, клиника, крупные болезни">★ ${it.impact}</span>`;
   return `<article class="card ${hero ? "hero" : ""}">
     <div class="card-top">
       <span class="chip">${esc(it.source_id.replace("pubmed-", "PubMed: "))}</span>
-      <span class="right"><span class="pub">${fmtDT(it.published_at)}</span><button class="fold" title="свернуть/развернуть" aria-expanded="true">▾</button></span>
+      <span class="right">${imp}<span class="pub">${fmtDT(it.published_at)}</span><button class="fold" title="свернуть/развернуть" aria-expanded="true">▾</button></span>
     </div>
     <h2><a href="${it.url}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
     <ol class="takeaways">${items}</ol>
@@ -246,10 +264,15 @@ function render() {
     return;
   }
   const useHero = !q && !src && issue !== "*" && issue === dates[0] && list.length > 1;
-  let html = "";
-  if (useHero) html += `<div class="hero-tag">главное за ${fmtDay(list[0].digest_date)}</div>` + card(list[0], true);
+  let html = "", rest = list;
+  if (useHero) {
+    /* hero = максимальный impact выпуска (воркер считает скор на публике) */
+    const hero = list.reduce((b, it) => ((it.impact ?? 0) > (b.impact ?? 0) ? it : b), list[0]);
+    html += `<div class="hero-tag">главное за ${fmtDay(list[0].digest_date)}</div>` + card(hero, true);
+    rest = list.filter(it => it !== hero);
+  }
   let last = "";
-  for (const it of (useHero ? list.slice(1) : list)) {
+  for (const it of rest) {
     if (issue === "*" && it.digest_date !== last) { last = it.digest_date; html += `<div class="date-sep">выпуск ${fmtDay(it.digest_date)}</div>`; }
     html += card(it, false);
   }
@@ -324,6 +347,7 @@ async function refresh() {
     renderMeta(j); renderChips(); renderTabs(); render();
   } catch (e) {
     document.getElementById("meta").innerHTML = `<span class="dot err"></span><span>digest.json недоступен</span>`;
+    document.getElementById("feed").innerHTML = `<div class="empty"><b>Не удалось загрузить digest.json</b>Обнови страницу или зайди позже.</div>`;
   }
 }
 refresh();

@@ -222,7 +222,7 @@ const timeAgo = (iso) => {
 };
 const fmtDay = (s) => new Date(s + "T00:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", year: "numeric" });
 const fmtDT = (s) => s ? new Date(s.includes("T") ? s : s.replace(" ", "T") + "Z").toLocaleDateString("ru-RU", { day: "numeric", month: "short" }) : "—";
-const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 const hi = (escaped) => {
   if (!q) return escaped;
   const needle = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -244,9 +244,9 @@ function card(it, hero) {
       <span class="chip">${esc(it.source_id.replace("pubmed-", "PubMed: "))}</span>
       <span class="right">${imp}<span class="pub">${fmtDT(it.published_at)}</span><button class="fold" title="свернуть/развернуть" aria-expanded="true">▾</button></span>
     </div>
-    <h2><a href="${it.url}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
+    <h2><a href="${esc(it.url)}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
     <ol class="takeaways">${items}</ol>
-    <div class="card-foot"><a href="${it.url}" target="_blank" rel="noopener">открыть ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>
+    <div class="card-foot"><a href="${esc(it.url)}" target="_blank" rel="noopener">открыть ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>
   </article>`;
 }
 

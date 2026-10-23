@@ -158,17 +158,17 @@
 </head>
 <body>
 <nav class="hub">
-  <a href="https://shray77.github.io/vetdigest-site/" data-s="vetdigest-site" class="on">🐾 Дайджест науки</a>
-  <a href="https://shray77.github.io/vetrecall-site/" data-s="vetrecall-site">🚨 Отзывы и вспышки РФ</a>
-  <a href="https://shray77.github.io/biothreat-site/" data-s="biothreat-site">🌍 Биоугрозы мира</a>
-  <a href="https://shray77.github.io/vet-heatmap/">🗺 ВетКарта</a>
-  <a href="https://shray77.github.io/vetflu-site/" data-s="vetflu-site">🦆 Окна риска ВПГП</a>
-  <a href="https://shray77.github.io/rss-core-site/" data-s="rss-core-site">🛰️ Статус ядра</a>
+  <a href="https://shray77.github.io/vetdigest-site/" data-s="vetdigest-site" class="on">Дайджест науки</a>
+  <a href="https://shray77.github.io/vetrecall-site/" data-s="vetrecall-site">Отзывы и вспышки РФ</a>
+  <a href="https://shray77.github.io/biothreat-site/" data-s="biothreat-site">Биоугрозы мира</a>
+  <a href="https://shray77.github.io/vet-heatmap/">ВетКарта</a>
+  <a href="https://shray77.github.io/vetflu-site/" data-s="vetflu-site">Окна риска ВПГП</a>
+  <a href="https://shray77.github.io/rss-core-site/" data-s="rss-core-site">Статус ядра</a>
 </nav>
 <header class="top">
   <div class="wrap topbar">
     <div class="brand">
-      <div class="logo">🐾</div>
+      <div class="logo"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#34d399" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="18" r="1.8"/><circle cx="11.5" cy="13.5" r="1.8"/><circle cx="16" cy="9" r="1.8"/><circle cx="19" cy="4.8" r="1.8"/></svg></div>
       <div>
         <h1>VetDigest</h1>
         <p>Мировая ветеринария — в трёх тезисах на русском. PubMed → Workers AI → этот экран.</p>
@@ -238,7 +238,7 @@ function card(it, hero) {
   const items = parseTakeaways(it.takeaways)
     .map(t => `<li>${t.n ? `<span class="t-num">${t.n}</span>` : ""}<span>${hi(esc(t.t))}</span></li>`).join("");
   const imp = it.impact == null ? "" :
-    `<span class="imp ${it.impact >= 70 ? "hi" : it.impact >= 50 ? "mid" : "lo"}" title="скор влияния на практику: цифры/дозы, клиника, крупные болезни">★ ${it.impact}</span>`;
+    `<span class="imp ${it.impact >= 70 ? "hi" : it.impact >= 50 ? "mid" : "lo"}" title="скор влияния на практику: цифры/дозы, клиника, крупные болезни">imp ${it.impact}</span>`;
   return `<article class="card ${hero ? "hero" : ""}">
     <div class="card-top">
       <span class="chip">${esc(it.source_id.replace("pubmed-", "PubMed: "))}</span>

@@ -30,6 +30,8 @@
     --surface: var(--ds-surface);
     --surface2: var(--ds-surface2);
     --border: var(--ds-border);
+    --border-strong: var(--ds-border-strong);
+    --rule: var(--ds-rule);
     --text: var(--ds-text);
     --muted: var(--ds-muted);
     --faint: var(--ds-faint);
@@ -59,7 +61,7 @@
     font: 500 10.5px/1.4 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--faint);
   }
   .mast-meta .m-date { color: var(--muted); }
-  header.top { border-bottom: 2px solid var(--text); padding: 0 0 20px; position: relative; }
+  header.top { border-bottom: 2px solid var(--rule); padding: 0 0 20px; position: relative; }
   header.top::after { content: ""; position: absolute; left: 0; right: 0; bottom: -4px; border-bottom: 1px solid var(--border-strong); }
   .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
   .topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 24px; }
@@ -119,7 +121,7 @@
   /* -- Разделитель выпуска (№ + дата + счётчик, толстая линейка) --------- */
   .date-sep {
     display: flex; align-items: baseline; gap: 12px; margin: 34px 0 14px; padding-top: 9px;
-    border-top: 2px solid var(--text);
+    border-top: 2px solid var(--rule);
     font: 500 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
   }
   .date-sep .d-no { color: var(--accent); font-weight: 700; }
@@ -199,7 +201,7 @@
   #totop:hover { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
 
   /* -- Подвал: двойная линейка + сноски + колофон ---------------------------- */
-  footer { border-top: 2px solid var(--text); position: relative; margin-top: 48px; padding: 16px 0 34px; }
+  footer { border-top: 2px solid var(--rule); position: relative; margin-top: 48px; padding: 16px 0 34px; }
   footer::after { content: ""; position: absolute; left: 0; right: 0; top: 3px; border-top: 1px solid var(--border-strong); }
   .foot { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--faint); }
   .foot a { color: var(--muted); text-decoration: none; }
@@ -222,7 +224,7 @@
     [data-theme="dark"] {
       color-scheme: light;
       --ds-bg: #FAF9F5; --ds-surface: #FFF; --ds-surface2: #F1EEE6;
-      --ds-border: #E3E0D5; --ds-border-strong: #C8C4B6;
+      --ds-border: #E3E0D5; --ds-border-strong: #C8C4B6; --ds-rule: #1C1B1A;
       --ds-text: #1C1B1A; --ds-muted: #5B564C; --ds-faint: #6E695C;
       --ds-accent: #4C7A3F; --ds-accent-strong: #3D6332; --ds-accent-ink: #F4FBF2;
     }

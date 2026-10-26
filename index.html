@@ -231,6 +231,25 @@
     body { background: #FAF9F5; }
     .card, .fig-panel { break-inside: avoid; }
   }
+
+/* -- мобильная компакция (Task 165): шапка даёт контенту первый экран -- */
+@media (max-width:640px){
+  header.top{padding-bottom:10px}
+  .topbar{padding-top:14px;gap:10px}
+  .brand{gap:10px}
+  .logo{width:34px;height:34px}
+  .logo svg{width:20px;height:20px}
+  h1{font-size:21px}
+  .mast-meta{font-size:10.5px;flex-wrap:nowrap;white-space:nowrap;overflow:hidden}
+  .brand p{font-size:12.5px;line-height:1.4;margin:3px 0 0;
+    display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+  .topbar .live,.topbar-right{flex-wrap:nowrap}
+  .hub{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;
+    -webkit-overflow-scrolling:touch;padding-bottom:2px}
+  .hub::-webkit-scrollbar{display:none}
+  .hub a{flex:none;white-space:nowrap}
+  footer{padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
+}
 </style>
 </head>
 <body>
@@ -289,9 +308,7 @@
   <div class="wrap">
     <div class="foot">
       <span class="legal">информационный сервис · не ветеринарный совет · <a href="./terms.html">условия и дисклеймер</a></span>
-      <span>данные: <a href="./digest.xml">RSS</a> · <a href="./digest.json">digest.json</a>, обновляется воркером по крону</span>
-      <a href="https://shray77.github.io/rss-core-site/">статус конвейера →</a>
-      <a href="https://github.com/shray77/vetdigest">репозиторий</a>
+      <span>данные: <a href="./digest.xml">RSS</a> · <a href="./digest.json">digest.json</a>, обновляется воркером по крону · <a href="https://shray77.github.io/rss-core-site/">статус конвейера →</a> · <a href="https://github.com/shray77/vetdigest">репозиторий</a></span>
     </div>
     <ol class="fnotes">
       <li><sup>1</sup>imp — скор влияния на практику (0–100): цифры и дозы, клиника, крупные болезни; считает воркер при сборке выпуска.</li>

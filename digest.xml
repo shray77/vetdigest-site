@@ -3,8 +3,143 @@
   <channel>
     <title>VetDigest — мировая ветеринария в трёх тезисах</title>
     <link>https://shray77.github.io/vetdigest-site/</link>
-    <description>Ежедневный дайджест ветеринарной науки на русском: PubMed -> Workers AI -> 3 тезиса для практики. Информационный сервис «как есть», не ветеринарная консультация: решения — только с ветеринарным врачом, проверяйте первоисточники. Условия: https://shray77.github.io/vetdigest-site/terms.html</description>
+    <description>Ежедневный дайджест ветеринарной науки на русском: PubMed + Europe PMC (препринты, AGRIS) -> Workers AI -> 3 тезиса для практики. Информационный сервис «как есть», не ветеринарная консультация: решения — только с ветеринарным врачом, проверяйте первоисточники. Условия: https://shray77.github.io/vetdigest-site/terms.html</description>
     <language>ru</language>
+    <item>
+      <title>Serum Peptidomic Profiling for Biomarker Discovery in Canine Oral Melanoma and Squamous Cell Carcinoma via MALDI-TOF and LC-MS/MS.</title>
+      <link>https://doi.org/10.1007/978-1-0716-5619-8_28</link>
+      <guid isPermaLink="false">61441dc1e00b0ec1892d8bb0e0c7541aae6c64ea</guid>
+      <pubDate>Fri, 01 Jan 2027 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось различие в сывороточном пептидоме у собак с меланомой и плоскоклеточным раком полости рта.
+2) Были выявлены четыре ключевых белка (FKBP4, ESRRA, IGSF10 и ABCB5), которые отличают поздние стадии этих заболеваний от ранних и здоровых контролей.
+3) Это открытие может изменить подход к диагностике и прогнозу онкологических заболеваний у собак, позволяя проводить более точную диагностику и подбор лечения.</description>
+    </item>
+    <item>
+      <title>Genomic characterization of Aliarcobacter spp. from livestock in commercial and smallholder farms and from children in Ghana and Tanzania.</title>
+      <link>https://doi.org/10.1016/j.onehlt.2026.101616</link>
+      <guid isPermaLink="false">f953a88d29f724e4293a42f8725693c8c37bfc95</guid>
+      <pubDate>Tue, 01 Dec 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовали геномные характеристики бактерий Aliarcobacter spp., выделенных от сельскохозяйственных животных и детей в Гане и Танзании.
+2) Главным результатом стало обнаружение двух подкладок Aliarcobacter butzleri с множественной лекарственной устойчивостью и выявление потенциально нового вида Aliarcobacter lanthieri.
+3) Это исследование меняет подход к надзору за здоровьем животных и людей в Африке, подчеркивая необходимость усиления контроля за распространением и воздействием этих патогенов на общественное здоровье и безопасность пищевых продуктов.</description>
+    </item>
+    <item>
+      <title>Low-cost geometry-tunable PDMS intraocular lenses fabricated using LCD 3D-printed molds for canine ophthalmic applications.</title>
+      <link>https://doi.org/10.1016/j.isci.2026.117890</link>
+      <guid isPermaLink="false">7b643e9cb3ba37cd41d5af7ef52ac1455fee9e85</guid>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось создание интраокулярных линз из полиdimетилсилоксана (PDMS) с помощью 3D-печати и формовки для применения в ветеринарной офтальмологии у собак.
+2) Главный результат — создание линз с высокой прозрачностью (&gt;95%) и регулируемой оптической силой от 18 до 42 диоптрий путем изменения кривизны формы.
+3) Это открывает путь для создания доступных и настраиваемых интраокулярных линз для ветеринарных офтальмологических приложений, что может изменить подход к лечению глазных заболеваний у животных.</description>
+    </item>
+    <item>
+      <title>Epidemiology and Haematological Alterations of Sheep Ked (Melophagus ovinus) Infestation and Farmers' Knowledge, Attitudes and Practices in Northwest Ethiopia.</title>
+      <link>https://doi.org/10.1002/vms3.71280</link>
+      <guid isPermaLink="false">9c6ddad668497a79eb58682b09c43cbb4a5a313f</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось распространение и влияние паразита Melophagus ovinus на овец в северо-западной Эфиопии.
+2) Главный результат: распространенность заражения составила 11,6%, а у зараженных овец уровень гематокрита был значительно ниже (26,5% ± 2,4%) по сравнению с не зараженными (35,1% ± 2,9%).
+3) Это меняет подход к контролю заражения, который должен включать целевые сезонные обработки, регулярную стрижку, улучшение питания и усиление ветеринарных услуг, особенно в высокогорных районах и для определенных групп овец.</description>
+    </item>
+    <item>
+      <title>Design limitations and ecological evidence constrain conclusions about cattle grazing in Cerrado savannas: a comment on Abreu et al. (2026)</title>
+      <link>https://europepmc.org/article/AGR/IND609549623</link>
+      <guid isPermaLink="false">c9c810f61cbece12247c7dc3879ba83fb8fadd27</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние выпаса скота на сохранение саванн в регионе Серрадо.
+2) Исследование показало, что выпас скота не снижает количество топлива до уровня, характерного для саванн, поддерживаемых огнём, и приводит к снижению видового разнообразия и изменению состава растительности.
+3) Это означает, что выводы о выпасе скота как средстве сохранения или управлении саваннами в регионе Серрадо должны быть интерпретированы с осторожностью и не могут быть приняты как окончательные.</description>
+    </item>
+    <item>
+      <title>Contextualizing the effects of cattle in fire-suppressed Cerrado savannas: a response to Cianciaruso and Almeida-Neto (2026)</title>
+      <link>https://europepmc.org/article/AGR/IND609549622</link>
+      <guid isPermaLink="false">09b3538404bad739fda5f2675161833394220161</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние выпаса скота на экосистемы саванн в бразильском регионе Серрадо, где было подавлено распространение пожаров.
+2) Выпас скота привел к снижению опасных горючих материалов на 61%, что снижает риск катастрофических лесных пожаров.
+3) Это исследование меняет подход к практике сохранения природы, показывая, что выпас скота может быть полезен для снижения риска пожаров и обеспечения экономической целесообразности сохранения частных земель.</description>
+    </item>
+    <item>
+      <title>Local Delivery of Interferon-&amp;#x3b2;1a for Respiratory Viral Infections: A Systematic Review.</title>
+      <link>https://doi.org/10.1002/rmv.70208</link>
+      <guid isPermaLink="false">58a49295487e665cb7b1bd143bcf2ec311b7200a</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовали эффективность, безопасность и биологические эффекты местного введения интерферона-β-1a для лечения респираторных вирусных инфекций.
+2) Главный результат: местное введение интерферона-β-1a показало противовирусную и иммуномодулирующую активность, уменьшение вирусной репликации и индукцию генов, стимулируемых интерфероном, с клинической пользой, наиболее последовательной у пациентов с астмой, ХОБЛ и госпитализированных с COVID-19.
+3) Это может изменить подход к лечению респираторных вирусных инфекций, особенно у пациентов с нарушенными противовирусными реакциями, но необходимы дальнейшие исследования для определения оптимальных показаний, стратегий дозирования и целевых популяций.</description>
+    </item>
+    <item>
+      <title>Harnessing the Horse for Human Osteoarthritis: microRNA-181a-5p Antisense Oligonucleotides in Clinically Normal Equine Fetlock Joints Are Safe and Well Tolerated.</title>
+      <link>https://doi.org/10.1002/jor.70298</link>
+      <guid isPermaLink="false">6f54026af8868e7376ac916a9e6cd79872d26147</guid>
+      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовали безопасность и переносимость внутрисуставных инъекций антисмысловых олигонуклеотидов, направленных против микроРНК-181a-5p, в суставах лодыжек лошадей.
+2) Лошадям вводили две инъекции с интервалом 28 дней в дозах 2000 мкг или 4000 мкг, и результаты показали лишь незначительные и транзиторные изменения в суставах.
+3) Это исследование может изменить подход к лечению остеоартроза у людей, поскольку лошади являются подходящей моделью для изучения этого заболевания, и результаты исследования могут быть полезны для разработки новых терапевтических стратегий.</description>
+    </item>
+    <item>
+      <title>A large-scale consensus study of a diagnostic algorithm for canine and feline mammary tumor histopathology: An attempt to improve inter-observer agreement.</title>
+      <link>https://doi.org/10.1177/03009858261472763</link>
+      <guid isPermaLink="false">3bfbaf017ca6b952a28065e12b15a7096331d8f5</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние структурированного диагностического алгоритма на согласованность морфологических диагнозов опухолей молочной железы у собак и кошек среди ветеринарных патологов.
+2) Применение алгоритма показало небольшое улучшение согласованности диагнозов, увеличив показатель конкордации с 0,72 до 0,73 для категории поражения и с 0,40 до 0,42 для гистологического подтипа.
+3) Использование этого алгоритма может улучшить стандартизацию диагнозов и поддержать обучение ветеринарных патологов, повышая точность классификации опухолей молочной железы у собак и кошек.</description>
+    </item>
+    <item>
+      <title>The evolving dynamics of OSCC- Associated stromal remodeling from tumor initiation to therapy: The &quot;Dark Side&quot; of tissue repair.</title>
+      <link>https://doi.org/10.1007/s12032-026-03469-2</link>
+      <guid isPermaLink="false">bc3df5aa321d1cb72763e40f08538fdabea87f78</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние опухолей на окружающие ткани и процесс заживления при раке полости рта.
+2) Главным результатом является понимание того, что опухоль создает вокруг себя среду, подобную хронической незаживающей ране, с динамическим изменением тканей и иммунных реакций.
+3) Это меняет подход к лечению рака полости рта, поскольку понимание динамики тканевых изменений и иммунных реакций может улучшить выбор терапии и прогнозирование рецидивов.</description>
+    </item>
+    <item>
+      <title>Porcine astrovirus induces endoplasmic reticulum stress-mediated autophagic degradation of MAVS to inhibit type I interferon production.</title>
+      <link>https://doi.org/10.1080/15548627.2026.2754684</link>
+      <guid isPermaLink="false">9a1c98108822f17112ab5bf4bfd4d0ea46cd98f6</guid>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовали влияние вируса Porcine astrovirus (PAstV) на клетки PK-15 и его роль в индукции стресса эндоплазматического ретикулума и аутофагии.
+2) Главный результат: вирус PAstV индуцирует стресс эндоплазматического ретикулума, что приводит к аутофагии и деградации белка MAVS, в результате чего снижается производство интерферонов типа I.
+3) Это открытие меняет подход к пониманию патогенных механизмов PAstV и может помочь в разработке новых противовирусных методов лечения, направленных на модуляцию стресса эндоплазматического ретикулума, аутофагии и апоптоза.</description>
+    </item>
+    <item>
+      <title>Efficacy of ShotBlocker for Pain Relief in Infants During Vaccination: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.</title>
+      <link>https://doi.org/10.1016/j.pedhc.2026.09.008</link>
+      <guid isPermaLink="false">5bd67c50eefc2306f4dcad234d81e363b738b64e</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние ShotBlocker на облегчение боли при вакцинации у младенцев.
+2) Использование ShotBlocker перед вакцинацией значительно снижало показатели боли у младенцев (размер эффекта -1,49; 95% ДИ, -2,57 до -0,41; p = 0,018).
+3) Это может изменить подход к снижению боли при вакцинации младенцев, но необходимы дальнейшие высококачественные исследования для подтверждения результатов.</description>
+    </item>
+    <item>
+      <title>Integrative reanalysis of public intracellular and vaccine-challenge transcriptomes, informed by single-cell and metabolomic atlases, refines antigen prioritisation for next-generation veterinary Brucella vaccines</title>
+      <link>https://doi.org/10.64898/2026.10.19.760311</link>
+      <guid isPermaLink="false">00b0e1667c6876f6dd4248a03bd382d34085ff94</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние бруцеллеза на животных и эффективность существующих вакцин.
+2) Главный результат показал, что белок Omp28/BP26 является вторым по распространенности внутри клеток, с 35 652 TPM и логарифмическим коэффициентом 4,25.
+3) Это меняет подход к разработке ветеринарных вакцин, определяя приоритеты для создания более эффективных и безопасных вакцин против бруцеллеза.</description>
+    </item>
+    <item>
+      <title>Leishmania infection in dogs in Israel - A cross-sectional study.</title>
+      <link>https://doi.org/10.1016/j.actatropica.2026.108381</link>
+      <guid isPermaLink="false">90a639393b7a422b7f28fca3655a1e288032fbb4</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовали распространение лейшманиоза у собак в Израиле.
+2) Лейшманиоз был обнаружен у 2,8% собак методом ELISA, у 2,5% - методом qPCR кДНК и у 0,7% - методом qPCR ITS1.
+3) Результаты исследования подчеркивают необходимость защиты собак от укусов песчаных мух и регулярного скрининга на лейшманиоз во всех регионах Израиля.</description>
+    </item>
+    <item>
+      <title>Placebo-controlled randomized clinical study using a collagen hydrolysate-enriched diet in dogs with osteoarthritis.</title>
+      <link>https://doi.org/10.1016/j.tvjl.2026.106946</link>
+      <guid isPermaLink="false">e3eed1748a4bba61d1eee08472680b397e42be08</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние диеты, обогащенной гидролизатом коллагена, на собак с остеоартрозом.
+2) В результате 12-недельного исследования не обнаружено значимых различий между группой, получавшей диету с гидролизатом коллагена, и группой, получавшей плацебо, по показателям LOAD и CBPI.
+3) Это означает, что на текущий момент нет достаточных оснований для рекомендации диеты с гидролизатом коллагена как метода лечения остеоартроза у собак в короткой перспективе.</description>
+    </item>
     <item>
       <title>Tick Saliva Collection.</title>
       <link>https://doi.org/10.1007/978-1-0716-5635-8_4</link>
@@ -373,114 +508,6 @@
       <description>1) Исследовали влияние гистосовместимости на трансплантацию скелетной мышцы, полученной из индуцированных плюрипотентных стволовых клеток (iPSC), у нечеловеческих приматов.
 2) Основным результатом стало то, что потенциал регенерации донорских клеток оказался более важным фактором, чем гистосовместимость, и даже полностью несовместимые трансплантаты с высоким потенциалом регенерации показали лучшие результаты, чем совместимые.
 3) Это открытие может изменить подход к лечению мышечных дистрофий, позволяя разработать универсальные аллогенные терапии на основе iPSC, которые можно будет использовать без учета гистосовместимости донора и реципиента.</description>
-    </item>
-    <item>
-      <title>Combined phenotypic characterization of dominant Enterococcus strains isolated from aquaculture facilities and fish in Greece: growth kinetics, minimum inhibitory concentrations of antibiotics, and biofilm behavior.</title>
-      <link>https://doi.org/10.1016/j.fm.2026.105313</link>
-      <guid isPermaLink="false">0966d200ce859513f58c261a871b1310f722d491</guid>
-      <pubDate>Mon, 01 Mar 2027 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось поведение доминирующих штаммов Enterococcus, выделенных из аквакультурных объектов и рыбы в Греции.
-2) Было обнаружено, что максимальная специфическая скорость роста увеличивается с температурой, а продолжительность лаг-фазы уменьшается, при этом штамм E. faecium 22 показал наибольшую термическую адаптивность и способность к образованию биопленки.
-3) Полученные результаты могут изменить подход к оценке рисков и стратегиям гигиены в аквакультуре, учитывая температуру и штамм в поведении Enterococcus.</description>
-    </item>
-    <item>
-      <title>Investing in pandemic prevention, preparedness, and response.</title>
-      <link>https://doi.org/10.1016/S2468-2667(26)00201-X</link>
-      <guid isPermaLink="false">c89ab68ae1e7a73883f63090ed72f379bb9dd04e</guid>
-      <pubDate>Sun, 01 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось распределение ресурсов для профилактики, подготовки и реагирования на пандемии в условиях ограниченных средств.
-2) Были определены 40 высокоприоритетных инвестиций на национальном и местном уровнях и 33 на региональном и глобальном уровнях, которые могут принести существенную пользу, превышающую их стоимость.
-3) Это требует от стран обеспечить адекватное финансирование, соответствующее их финансовым возможностям, и предварительно согласовать финансирование реагирования на вспышки для своевременного реагирования.</description>
-    </item>
-    <item>
-      <title>Molecular survey of zoonotic protozoa in free-ranging marmosets (Callithrix penicillata) from Central Brazil: implications for One Health surveillance.</title>
-      <link>https://doi.org/10.1016/j.parint.2026.103411</link>
-      <guid isPermaLink="false">4c3430593bc487bde877c434b6e460d17f75e483</guid>
-      <pubDate>Wed, 21 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось распространение зоонотических простейших у диких мarmoset в центральной Бразилии.
-2) Обнаружено, что 71,6% животных были инфицированы хотя бы одним видом простейших, при этом 39,7% были положительны на T. gondii, 32,4% на Leishmania spp. и 21,1% на T. cruzi.
-3) Эти результаты подчеркивают важность мониторинга популяций диких приматов в городских районах для предотвращения и контроля зоонотических заболеваний в рамках концепции &quot;Одно здоровье&quot;.</description>
-    </item>
-    <item>
-      <title>Outcome following lag screw fixation of non-C3 carpal slab fractures in horses.</title>
-      <link>https://doi.org/10.1111/vsu.70165</link>
-      <guid isPermaLink="false">465ab980daf350399fa2f9e63e50aace1fac3027</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось применение метода лаг-винтовой фиксации при лечении слэб- переломов костей запястья лошадей.
-2) Выживаемость лошадей после операции составила 88%, 53% вернулись к предыдущему уровню атлетической нагрузки, а удовлетворенность владельцев достигла 71%.
-3) Результаты исследования позволяют рекомендовать лаг-винтовую фиксацию как эффективный метод лечения слэб-переломов костей запястья лошадей, обеспечивающий хорошую выживаемость и восстановление работоспособности.</description>
-    </item>
-    <item>
-      <title>Intravenous ibuprofen versus ketorolac for acute low back pain in the emergency department: a triple-blind randomized clinical trial.</title>
-      <link>https://doi.org/10.1007/s11739-026-04570-0</link>
-      <guid isPermaLink="false">2d8f848538a5fcc8b0717ff2f1d781cc431ca1bd</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовали эффективность внутривенного ибупрофена и кеторолака при острой боли в нижней части спины в отделении неотложной помощи.
-2) Ибупрофен в дозе 800 мг показал лучшие результаты по снижению боли через 10 и 30 минут, чем кеторолак в дозе 30 мг, с значимыми различиями в показателях боли.
-3) Это может изменить практику лечения острой боли в нижней части спины, где ибупрофен может быть рассмотрен как эффективная альтернатива кеторолаку, потенциально снижая время пребывания в отделении неотложной помощи.</description>
-    </item>
-    <item>
-      <title>High-risk antimicrobial resistance genomic traits in multidrug-resistant Salmonella across China's food chain: projections to 2050.</title>
-      <link>https://doi.org/10.1038/s41467-026-78346-7</link>
-      <guid isPermaLink="false">fc40be6b9533355d4fddf8c4f77242f252f3e1c9</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось распространение геномных признаков антибиотикорезистентности у мультирезистентных Salmonella в пищевой цепи Китая.
-2) Выявлено 84 высокорисковых признака, включая резистентность к карбапенему, колистину и бета-лактамам, которые, как прогнозируется, будут увеличиваться до 2050 года, причем некоторые гены могут увеличиться до 20%.
-3) Результаты исследования могут изменить подход к борьбе с антибиотикорезистентностью, смещая фокус от реагирования на предотвращение заражений и распространения резистентных штаммов.</description>
-    </item>
-    <item>
-      <title>Clinical and dermatological findings associated with Leishmania spp. test-positivity in shelter dogs of Kastamonu, Black Sea region of T&amp;#xfc;rkiye: an exploratory cross-sectional study.</title>
-      <link>https://doi.org/10.1016/j.actatropica.2026.108376</link>
-      <guid isPermaLink="false">7585a4f9437dbd452bcce9e1ac5976505eaf0fa4</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовали клинические и дерматологические находки, связанные с положительными тестами на Leishmania spp. у бездомных собак в регионе Черного моря в Турции.
-2) Положительные тесты на Leishmania spp. были обнаружены у 4,5% собак, и аномалии кожи были значительно связаны с положительными тестами, при этом все четыре собаки с микроскопически положительными результатами имели аномалии кожи.
-3) Эти результаты могут изменить подход к диагностике и лечению лейшманиоза у собак, подчеркивая важность учета дерматологических находок и необходимости дальнейших молекулярно-confirmed исследований в регионе.</description>
-    </item>
-    <item>
-      <title>Aqueous extract of Ormocarpum cochinchinense promotes fracture healing through coordinated angiogenic, osteogenic, and cytoprotective mechanisms.</title>
-      <link>https://doi.org/10.1007/s10735-026-11003-x</link>
-      <guid isPermaLink="false">32c9fcdd06476fa5eb99e96ec40377bd25ddc8f5</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовали влияние водного экстракта Ormocarpum cochinchinense на процесс заживления骨ных переломов.
-2) Экстракт ускорял заживление переломов, увеличивая образование костного мозга, депозицию коллагена и минерализацию, а также усиливал экспрессию генов, связанных с ангиогенезом и остеогенезом.
-3) Это открытие может изменить подход к лечению переломов, предложив новый безопасный и эффективный натуральный терапевтический агент для регенерации костей.</description>
-    </item>
-    <item>
-      <title>Retrospective serological evidence of exposure to selected equine viruses in horses from Indigenous communities of Costa Rica, 2011.</title>
-      <link>https://doi.org/10.1007/s11250-026-05407-w</link>
-      <guid isPermaLink="false">908ddd57af1bb44497674b7bcc96a1dfb62c8622</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовали уровень воздействия различных вирусных патогенов на лошадей в индейских общинах Коста-Рики.
-2) Главный результат: серологические доказательства воздействия вируса Западного Нила обнаружены у 58,9% лошадей, а также высокая серопозитивность к вирусу EHV-4 (91,2%) и более низкая к другим вирусам.
-3) Это меняет подход к мониторингу и профилактике заболеваний у лошадей в этих общинах, подчеркивая важность включения недополученных индейских популяций лошадей в программы наблюдения и предотвращения заболеваний.</description>
-    </item>
-    <item>
-      <title>Hantaviruses as Emerging Zoonotic Pathogens: Molecular Biology, Epidemiology, Therapeutics, vaccine, and Pathogenesis.</title>
-      <link>https://doi.org/10.1007/s00284-026-05194-5</link>
-      <guid isPermaLink="false">3c0461be05bf4814da96e1015816250810239497</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовали вирусы хантавирусов как зоонозные патогены и их влияние на человека и животных.
-2) Главным результатом является понимание взаимосвязи между эволюцией вируса, экологией резервуаров, изменением окружающей среды и динамикой передачи, что приводит к заболеваниям, таким как геморрагическая лихорадка с почечным синдромом и хантавирусный кардиопульмональный синдром.
-3) Это меняет подход к профилактике и лечению заболеваний, вызванных хантавирусами, подчеркивая необходимость интегрированного подхода к пониманию механизмов передачи и развития заболеваний для разработки эффективных терапий и вакцин.</description>
-    </item>
-    <item>
-      <title>Extreme temperatures and the epithelial barrier theory.</title>
-      <link>https://doi.org/10.1007/s00281-026-01087-8</link>
-      <guid isPermaLink="false">ec192939192e1a10f21124142b6ef2d930637bd0</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось влияние экстремальных температур на целостность эпителиального барьера и его последствия для здоровья.
-2) Экстремальные температуры могут нарушать структуру и функцию эпителиального барьера, что приводит к воспалению, дисбактериозу и ослаблению иммунитета, при этом изменения могут быть усилены дополнительными факторами, такими как колебания влажности, ультрафиолетовое излучение и загрязнение воздуха.
-3) Это исследование меняет подход к пониманию глобальных проблем здравоохранения, подчеркивая важность учета воздействия экстремальных температур на здоровье человека и животных, особенно в контексте изменения климата и роста распространенности неинфекционных заболеваний.</description>
-    </item>
-    <item>
-      <title>Staphylococcus chromogenes as a cause of sequential mastitis episodes in a camel (Camelus dromedarius).</title>
-      <link>https://doi.org/10.1007/s42770-026-02124-2</link>
-      <guid isPermaLink="false">c8c66505784c77d366012c3031de255f95823b35</guid>
-      <pubDate>Tue, 20 Oct 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось влияние Staphylococcus chromogenes на развитие мастита у верблюдов.
-2) Были зафиксированы два эпизода мастита у верблюда, вызванные S. chromogenes, с чувствительностью изолята к различным антибиотикам.
-3) Это открытие может изменить подход к диагностике и лечению мастита у верблюдов, подчеркивая необходимость дальнейших исследований роли S. chromogenes в этом заболевании.</description>
     </item>
   </channel>
 </rss>

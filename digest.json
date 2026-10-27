@@ -1,7 +1,161 @@
 {
   "service": "vetdigest",
-  "generated_at": "2026-10-26T07:01:12.709Z",
+  "generated_at": "2026-10-27T07:00:10.298Z",
   "items": [
+    {
+      "fingerprint": "6794d56d20dd5bd8b038db643d052eeadd9b0286",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-anesthesia",
+      "title": "Haemodynamic and Respiratory Effects of Dexmedetomidine as an Adjuvant to Oxycodone Patient-Controlled Analgesia After Lumbar Spinal Fusion: A Post Hoc Analysis of the DoseRespDex Randomised Controlled Trial.",
+      "url": "https://doi.org/10.1111/aas.70362",
+      "published_at": "2027-01-01T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "484f59334ccc1befe2ddbea6a9d90254778b8150",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-imaging",
+      "title": "Imaging Features of Adrenal Glands Infiltration by Multicentric Lymphoma in Dogs and Cats.",
+      "url": "https://doi.org/10.1111/vru.70233",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 2,
+      "impact": 40
+    },
+    {
+      "fingerprint": "4361ff49b921a1ac7cb4c9bac5a06e629c5ba59f",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-imaging",
+      "title": "Ultrasound Biomicroscopy Analysis of Ciliary Cleft, Ciliary Body, and Ciliary Muscle Changes Following Capsular Tension Ring Implantation in Dogs.",
+      "url": "https://doi.org/10.1111/vop.70284",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "0a4e11a3486378d237fd35f19f8c405fcc55326f",
+      "digest_date": "2026-10-27",
+      "source_id": "eupmc-vet-preprints",
+      "title": "Characterization and evaluation of the anti-streptococcal activity of a novel zoocin A-like endopeptidase for potential veterinary applications",
+      "url": "https://doi.org/10.64898/2026.10.23.760966",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "1d96300c9357640a20b73146cc0beddff370cd31",
+      "digest_date": "2026-10-27",
+      "source_id": "eupmc-vet-preprints",
+      "title": "Risk-Factors of Crimean-Congo Haemorrhagic Fever Across Six Tertiary Hospitals in Afghanistan from 2022 to 2025: Reported Exposures, Healthcare-Worker Clustering, and Ribavirin Treatment-Timing Analyses",
+      "url": "https://doi.org/10.64898/2026.10.24.26366389",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "b3efaa677ed4acce7ee493b641773a25664f219f",
+      "digest_date": "2026-10-27",
+      "source_id": "eupmc-vet-preprints",
+      "title": "Carcass characteristics of dual-purpose chicken genotypes under natural and irrigated-lucerne foraging systems at Matopos Research Station, Zimbabwe",
+      "url": "https://doi.org/10.21203/rs.3.rs-11469134/v1",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "073de72cc9e4035f8c7add537230ef86632fd525",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-infectious",
+      "title": "Entamoeba invadens infection contributes to juvenile mortality in captive sea turtles.",
+      "url": "https://doi.org/10.1016/j.parint.2026.103416",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 50
+    },
+    {
+      "fingerprint": "d4618383e8dc668b6fb74752aeaa17adf0387026",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-infectious",
+      "title": "A new semi-automated, motility-based screening assay for discovery of compounds with activity against the juvenile stage of Fasciola hepatica.",
+      "url": "https://doi.org/10.1371/journal.pntd.0014491",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "4f25f2b46be79d4ab544c98b13b53349536b20cb",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-infectious",
+      "title": "L-Histidine resensitizes multidrug-resistant bacteria to carbapenems by inhibiting New Delhi metallo-&#x3b2;-lactamase activity.",
+      "url": "https://doi.org/10.1371/journal.ppat.1014728",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "4cf5b31f0d9aec6ff282335103c2bca3d2a5c530",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-bovine-mastitis",
+      "title": "Educational impact of a bacteriological training program and field assessment of antimicrobial susceptibility testing among bovine veterinarians in Japan.",
+      "url": "https://doi.org/10.1292/jvms.26-0328",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 55
+    },
+    {
+      "fingerprint": "040090c47633c4fa02199b4f200e7263fdb87a9f",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-parasitology",
+      "title": "Beyond the reservoir: rethinking wildlife contributions to Fasciola transmission in multihost landscapes.",
+      "url": "https://doi.org/10.1017/S0022149X26102417",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "167f10dc4c659545ca968d941d61475dab4474af",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-parasitology",
+      "title": "Evaluation of an automated faecal egg count system for enumeration of ascarid ova in chickens.",
+      "url": "https://doi.org/10.1017/S0022149X26102533",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "04c4b1137f67c14afd0c0b1e4a8d417965cc196f",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-anesthesia",
+      "title": "Safety of the Use of Interpolation Flaps in Combination With Random Pattern Flaps or Skin Grafts for Repair of Post-Mohs Surgical Defects: A Cohort Study.",
+      "url": "https://doi.org/10.1097/DSS.0000000000005399",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 50
+    },
+    {
+      "fingerprint": "8b4d63c7e767c0404e3cd8571c4c537c7a7a7157",
+      "digest_date": "2026-10-27",
+      "source_id": "pubmed-vet-anesthesia",
+      "title": "Beyond denial: A case report illustrating the complexity of disengagement in advanced cancer care.",
+      "url": "https://doi.org/10.1017/S1478951526103459",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
+      "dup_count": 1,
+      "impact": 40
+    },
     {
       "fingerprint": "61441dc1e00b0ec1892d8bb0e0c7541aae6c64ea",
       "digest_date": "2026-10-26",
@@ -474,149 +628,6 @@
       "takeaways": "1) Исследовалось сравнительное влияние аллогенных мезенхимальных стромальных клеток и локиветмаба на течение легкой и умеренной атопической дерматита у собак.\n2) Однократная внутривенная доза аллогенных мезенхимальных стромальных клеток показала сравнимую эффективность с тремя ежемесячными подкожными дозами локиветмаба, со снижением симптомов по шкале CADESI-04 и PVAS на 28-й день.\n3) Результаты исследования могут изменить подход к лечению атопической дерматита у собак, предлагая новый потенциальный вариант терапии с эффективностью, сравнимой с существующими методами лечения.",
       "dup_count": 2,
       "impact": 72
-    },
-    {
-      "fingerprint": "6a63046af6179d12f42866b73bc7123a8e5c8703",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-parasitology",
-      "title": "Anaplasma spp., Coxiella, Babesia and Theileria Infections in Vermipsylla Alakurt Fleas.",
-      "url": "https://doi.org/10.1007/s11686-026-01428-5",
-      "published_at": "2026-10-20T00:00:00.000Z",
-      "takeaways": "1) Исследовали наличие патогенов, переносимых комарами, в блохах Vermipsylla alakurt, паразитирующих на овцах, козах и яках в северо-западном Китае.\n2) Обнаружили Anaplasma ovis у 6 блох, Coxiella burnetii у 37, Babesia sp. у 7, Babesia ovis у 1 и Theileria annulata у 4 из 83 исследованных блох.\n3) Это значит, что блохи Vermipsylla alakurt могут быть переносчиками этих патогенов в альпийских регионах, что важно учитывать при диагностике и лечении заболеваний овец, коз и яков.",
-      "dup_count": 2,
-      "impact": 62
-    },
-    {
-      "fingerprint": "1bb841a130fdf67a38b96179355860db183411fe",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-infectious",
-      "title": "Genomic epidemiology of Salmonella from retail chicken meat in Japan: decline in pESI-like plasmid-harboring S. Infantis ST32 and predominance of S. Schwarzengrund ST241.",
-      "url": "https://doi.org/10.1016/j.jfp.2026.100948",
-      "published_at": "2026-10-20T00:00:00.000Z",
-      "takeaways": "1) Исследовали геномную эпидемиологию Salmonella в розничной курице в Японии.\n2) Основным результатом стало снижение распространения S. Infantis ST32 с плазмидами pESI-like и доминирование S. Schwarzengrund ST241, причем последний встречался чаще зимой (66%) и в восточной части Японии.\n3) Это меняет подход к мониторингу и контролю антибиотикорезистентности Salmonella в практике, подчеркивая необходимость постоянного геномного надзора для снижения риска передачи заболеваний.",
-      "dup_count": 1,
-      "impact": 95
-    },
-    {
-      "fingerprint": "7e12a602c766ddaaf694987f87ecaa0af5c5fc85",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-infectious",
-      "title": "Next-Generation CRISPR-Based Molecular Diagnostics for Veterinary Parasitology: From Laboratory Innovation to One Health Surveillance.",
-      "url": "https://doi.org/10.1016/j.molbiopara.2026.111789",
-      "published_at": "2026-10-20T00:00:00.000Z",
-      "takeaways": "1) Исследовались новые методы диагностики паразитарных заболеваний у животных с использованием технологии CRISPR.\n2) Были разработаны высокочувствительные и быстрые платформы для обнаружения паразитов с помощью CRISPR/Cas12, Cas13 и Cas14.\n3) Это может изменить практику ветеринарной медицины, позволяя проводить быструю и точную диагностику в полевых условиях, что улучшит контроль и профилактику паразитарных заболеваний.",
-      "dup_count": 1,
-      "impact": 62
-    },
-    {
-      "fingerprint": "4a46bf2c9b0413f875fa4082f1280f67345e6d94",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-anesthesia",
-      "title": "Electroacupuncture analgesia for cancer-related pain.",
-      "url": "https://doi.org/10.1097/SPC.0000000000000831",
-      "published_at": "2026-10-19T00:00:00.000Z",
-      "takeaways": "1) Исследовалось использование электроакупунктуры для обезболивания при боли, связанной с раком.\n2) Исследования показали, что электроакупунктура может иметь обезболивающий эффект, хотя степень и последовательность этого эффекта варьируются в разных исследованиях.\n3) Это может изменить подход к лечению боли, связанной с раком, включая электроакупунктуру как дополнительную терапию к традиционным методам обезболивания.",
-      "dup_count": 1,
-      "impact": 57
-    },
-    {
-      "fingerprint": "e4460ae2fb6c0e0ade001e00855f13b97cd3c1ee",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-feline-medicine",
-      "title": "Target-controlled infusion of propofol induces rapid hypertriglyceridemia in healthy cats.",
-      "url": "https://doi.org/10.2460/ajvr.26.05.0217",
-      "published_at": "2026-10-19T00:00:00.000Z",
-      "takeaways": "1) Исследовали влияние целевой контролируемой инфузии пропофола на концентрацию триглицеридов в сыворотке крови здоровых кошек.\n2) Главный результат: концентрация триглицеридов в сыворотке крови увеличилась в среднем до 128 мг/дл сразу после индукции и до 143 мг/дл через 40 минут инфузии пропофола.\n3) Это меняет подход к использованию пропофола в ветеринарной анестезии, особенно у пациентов с нарушениями липидного или метаболического обмена, и подчеркивает необходимость контроля концентрации триглицеридов во время длительных инфузий пропофола.",
-      "dup_count": 2,
-      "impact": 53
-    },
-    {
-      "fingerprint": "5c6464fb7aea737f69243590c98c6f9e3c48e5fa",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-feline-medicine",
-      "title": "In the Midst of a Cytokine Storm-The Hemophagocytic Syndrome (Hemophagocytic Lymphohistiocytosis/Macrophage Activation Syndrome).",
-      "url": "https://doi.org/10.1111/vcp.70155",
-      "published_at": "2026-10-19T00:00:00.000Z",
-      "takeaways": "1) Исследовалось гемофагоцитарное синдром (ГФС) у собак и кошек, его причины, клинические проявления и диагностика.\n2) Основным результатом стало понимание того, что ГФС возникает из-за дисрегуляции активации цитотоксических лимфоцитов и макрофагов, с ключевой ролью интерферона-γ в поддержании гиперинфламмации.\n3) Это меняет практику ветеринарных врачей, поскольку требует комплексной клинико-патологической оценки и разработки специфических диагностических критериев для ГФС у собак и кошек, чтобы отличить его от других заболеваний с подобными симптомами.",
-      "dup_count": 1,
-      "impact": 57
-    },
-    {
-      "fingerprint": "13b5bd6f5e473d43ef739dc2d77565d88c071421",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-feline-medicine",
-      "title": "A case of feline sparganosis caused by Spirometra asiana (Cestoda: Diphyllobothriidae) discovered during left forelimb amputation.",
-      "url": "https://doi.org/10.1016/j.parint.2026.103412",
-      "published_at": "2026-10-19T00:00:00.000Z",
-      "takeaways": "1) Исследовалось случайное обнаружение паразита у кошки во время ампутации левой передней конечности.\n2) Был найден и удален большой плероцеркоид, идентифицированный как Spirometra asiana, что является первым зарегистрированным случаем фелиновой спарганозы, вызванной этим видом.\n3) Это открытие может изменить подход к диагностике и лечению кошек, особенно тех, которые содержатся на улице и могут быть носителями плероцеркоидов.",
-      "dup_count": 1,
-      "impact": 57
-    },
-    {
-      "fingerprint": "f527f2fb9f7e5e7a8aba01a7d087b462e6c98700",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-parasitology",
-      "title": "Fleming Fund Implementation in Kenya: What Have We Learned About Strengthening One Health Antimicrobial Resistance Surveillance for Decision-making?",
-      "url": "https://doi.org/10.1093/cid/ciag500",
-      "published_at": "2026-10-19T00:00:00.000Z",
-      "takeaways": "1) Исследовалось развитие системы мониторинга устойчивости к антибиотикам в Кении в рамках программы Fleming Fund.\n2) К 2025 году количество пунктов мониторинга увеличилось с 2 до 30, охватывая сферы человеческого здоровья, животных и окружающей среды.\n3) Это опыт может изменить подход к мониторингу устойчивости к антибиотикам в других странах с низкими и средними доходами, подчеркивая важность государственного руководства и координированной поддержки.",
-      "dup_count": 1,
-      "impact": 50
-    },
-    {
-      "fingerprint": "da2f32f6dce1d7fd0be0ac0b54736229fed8f6ee",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-dermatology",
-      "title": "Icotrokinra, a Targeted Oral Peptide, in Participants With Moderate-to-Severe Plaque Psoriasis and Self-Reported Psoriatic Arthritis: Results From a Pooled Analysis of the Phase 3 ICONIC-LEAD, ICONIC-ADVANCE 1, and ICONIC-ADVANCE 2 Trials.",
-      "url": "https://doi.org/10.1177/24755303261494526",
-      "published_at": "2026-10-18T00:00:00.000Z",
-      "takeaways": "1) Исследовалось влияние икотрокинры, целевой пероральной пептидной терапии, на пациентов с умеренной и тяжелой псориазной артропатией.\n2) Основным результатом стало значительное улучшение показателей псориазной артропатии у пациентов, получавших икотрокинру 200 мг в сутки, по сравнению с плацебо, уже через 8 недель лечения.\n3) Это может изменить подход к лечению псориазной артропатии, поскольку икотрокинра показала эффективность и хорошую переносимость, что может улучшить качество жизни пациентов с этим заболеванием.",
-      "dup_count": 1,
-      "impact": 85
-    },
-    {
-      "fingerprint": "619b97be69b03642590ca8439b96665d1b82e84b",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-surgery",
-      "title": "Use of plasma chromogranin a epitopes vasostatin and catestatin as biomarkers for catecholamine-producing tumours in dogs.",
-      "url": "https://doi.org/10.1186/s12917-026-05996-6",
-      "published_at": "2026-10-16T00:00:00.000Z",
-      "takeaways": "1) Исследовали использование плазменных эпитопов хромогранина А (вазостатина и катестатина) в качестве биомаркеров для опухолей, производящих катехоламины, у собак.\n2) Главный результат: медиана плазменной концентрации вазостатина у собак с опухолями, производящими катехоламины, составила 0,82 нмоль/л, что было значительно выше, чем у собак с кортикosteroidными опухолями (0,50 нмоль/л).\n3) Это может изменить практику диагностики опухолей, производящих катехоламины, у собак, поскольку повышенная концентрация вазостатина в плазме может служить потенциальным биомаркером для определенного подмножества этих опухолей.",
-      "dup_count": 1,
-      "impact": 57
-    },
-    {
-      "fingerprint": "70d8865a19ebbe2582ca6dbbe4c3b385b7acc270",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-parasitology",
-      "title": "A novel acyl-CoA binding protein (EnACBP): Molecular characterization, localization, and immunoprotective efficacy against Eimeria necatrix.",
-      "url": "https://doi.org/10.1016/j.vetpar.2026.110953",
-      "published_at": "2026-10-16T00:00:00.000Z",
-      "takeaways": "1) Исследовали белок EnACBP, который принадлежит к семейству ацил-КоА-связывающих белков и играет роль в метаболизме жирных кислот и энергетическом гомеостазе клеток.\n2) Главный результат: рекомбинантный белок rEnACBP был получен и показал высокую молекулярную массу (приблизительно 60 кДа), а уровень транскрипции EnACBP был значительно выше в гаметоцитах и неспорулированных ооцистах, чем во втором и третьем поколении мерозоитов.\n3) Это открытие может изменить практику лечения птичьей кокцидиоза, поскольку EnACBP представляет собой потенциальный защитный антиген для разработки субъединичной вакцины.",
-      "dup_count": 1,
-      "impact": 67
-    },
-    {
-      "fingerprint": "ec4cf901f2d5c0e629928a74e6fa33ff7e0d4815",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-anesthesia",
-      "title": "Comparison of Postoperative Analgesic Efficacy Between Opioid-free Anaesthesia Using Intravenous Magnesium, Lidocaine, and Erector Spinae Plane Block, and Opioid-based Anaesthesia in Laparoscopic Abdominal Surgeries: A Randomised Controlled Trial.",
-      "url": "https://doi.org/10.4274/TJAR.2026.241747",
-      "published_at": "2026-10-16T00:00:00.000Z",
-      "takeaways": "1) Исследовалось сравнение эффективности постоперационной анальгезии между opioid-free анестезией с использованием магния, лидокаина и блока плоскости спинных разгибателей и opioid-базированной анестезией при лапароскопических абдоминальных операциях.\n2) Оpioid-free группа получала 2 г магния, непрерывную инфузию лидокаина 1,5 мг/кг/ч и двусторонний блок плоскости спинных разгибателей с 25 мл 0,25% бупивакаина, что привело к значительному снижению болевых ощущений и необходимости дополнительной анальгезии.\n3) Это может изменить практику использования opioid-free анестезии как альтернативы традиционной opioid-базированной анестезии для лапароскопических операций, снижая риск постоперационных осложнений и улучшая качество анальгезии.",
-      "dup_count": 1,
-      "impact": 85
-    },
-    {
-      "fingerprint": "3d43ea19d7fbc989bd4ce36e485ab3e51adc62b0",
-      "digest_date": "2026-10-23",
-      "source_id": "pubmed-vet-surgery",
-      "title": "Donor-intrinsic regenerative potential outweighs histocompatibility in iPSC-derived skeletal muscle engraftment in nonhuman primates.",
-      "url": "https://doi.org/10.1016/j.stemcr.2026.103119",
-      "published_at": "2026-10-15T00:00:00.000Z",
-      "takeaways": "1) Исследовали влияние гистосовместимости на трансплантацию скелетной мышцы, полученной из индуцированных плюрипотентных стволовых клеток (iPSC), у нечеловеческих приматов.\n2) Основным результатом стало то, что потенциал регенерации донорских клеток оказался более важным фактором, чем гистосовместимость, и даже полностью несовместимые трансплантаты с высоким потенциалом регенерации показали лучшие результаты, чем совместимые.\n3) Это открытие может изменить подход к лечению мышечных дистрофий, позволяя разработать универсальные аллогенные терапии на основе iPSC, которые можно будет использовать без учета гистосовместимости донора и реципиента.",
-      "dup_count": 1,
-      "impact": 57
     }
   ]
 }

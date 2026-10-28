@@ -308,7 +308,7 @@
     <p class="fig-cap" id="figCap"><b>Рис. 1</b> — статей на выпуск, последние выпуски; источник — digest.json, сборка по крону</p>
   </section>
   <section class="filters">
-    <input id="q" type="search" placeholder="Поиск по заголовкам и тезисам…">
+    <input id="q" type="search" placeholder="Поиск по заголовкам и тезисам…" aria-label="Поиск по заголовкам и тезисам">
     <div class="chips" id="chips"></div>
   </section>
   <div class="chips issue-tabs" id="issue-tabs"></div>
@@ -334,7 +334,7 @@
       <li><sup>2</sup>Источники — PubMed (MEDLINE, U.S. National Library of Medicine) и Europe PMC (EBI: препринты bioRxiv/medRxiv — PPR, сельхозбазы AGRIS — AGR); тезисы — результат обработки Cloudflare Workers AI.</li>
       <li><sup>3</sup>«Обновлено» — момент последней автоматической сборки digest.json, не время публикации статей.</li>
     </ol>
-    <p class="colophon">Набрано Instrument Serif, Inter и IBM Plex Mono · vet-ds v2.1 «Научная периодика»</p>
+    <p class="colophon">Набрано Instrument Serif и Prata (кириллический дисплей, самохост в fonts/), Inter и IBM Plex Mono · vet-ds v2.4.1 «Научная периодика»</p>
   </div>
 </footer>
 
@@ -370,11 +370,14 @@ const fmtDT = (s) => {
   if (el) el.textContent = new Date().toLocaleDateString("ru-RU", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
 })();
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+/* схема-гвард: в href едут только http(s)- и doi-ссылки, прочее — заглушка «#» */
+const safeUrl = (u) => /^(https?:|doi:)/i.test(String(u || "")) ? u : "#";
 /* человекочитаемые имена источников: pubmed-* — термы PubMed, eupmc-* —
    каналы Europe PMC (Task 153: препринты PPR + агробазы AGR) */
 const EUPMC_LABELS = { "eupmc-vet-preprints": "препринты", "eupmc-vet-agr": "AGRIS" };
-const srcChip = (s) => s.startsWith("eupmc-") ? (EUPMC_LABELS[s] || s.slice(6)) : s.replace("pubmed-", "");
-const srcCard = (s) => s.startsWith("eupmc-") ? `Europe PMC · ${srcChip(s)}` : s.replace("pubmed-", "PubMed: ");
+/* фолбэк неизвестного канала eupmc-* — честный лейбл «Europe PMC», не срез id */
+const srcChip = (s) => s.startsWith("eupmc-") ? (EUPMC_LABELS[s] || "Europe PMC") : s.replace("pubmed-", "");
+const srcCard = (s) => s.startsWith("eupmc-") ? (EUPMC_LABELS[s] ? `Europe PMC · ${EUPMC_LABELS[s]}` : "Europe PMC") : s.replace("pubmed-", "PubMed: ");
 const hi = (escaped) => {
   if (!q) return escaped;
   const needle = esc(q).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -399,14 +402,14 @@ function card(it, hero) {
     .map(t => `<li>${t.n ? `<span class="t-num">${t.n}</span>` : ""}<span>${hi(esc(t.t))}</span></li>`).join("");
   const imp = (fail || it.impact == null) ? "" :
     `<span class="imp ${it.impact >= 70 ? "hi" : it.impact >= 50 ? "mid" : "lo"}" title="скор влияния на практику: цифры/дозы, клиника, крупные болезни">imp ${it.impact}</span>`;
-  const foot = `<div class="card-foot"><a href="${esc(it.url)}" target="_blank" rel="noopener">открыть источник ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>`;
+  const foot = `<div class="card-foot"><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">открыть источник ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>`;
   if (hero) {
     /* лид номера: kicker + imp над заголовком, источник — в подвале карточки */
     return `<article class="card hero">
       <div class="hero-head"><span class="hero-kicker">Лид номера</span>${imp}<span class="rule"></span></div>
-      <h2><a href="${esc(it.url)}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
+      <h2><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
       <ol class="takeaways">${items}</ol>
-      <div class="card-foot"><span class="chip">${esc(srcCard(it.source_id))}</span><a href="${esc(it.url)}" target="_blank" rel="noopener">открыть ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>
+      <div class="card-foot"><span class="chip">${esc(srcCard(it.source_id))}</span><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">открыть ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>
     </article>`;
   }
   return `<article class="card">
@@ -414,7 +417,7 @@ function card(it, hero) {
       <span class="chip">${esc(srcCard(it.source_id))}</span>
       <span class="right">${fail ? `<span class="fail-badge" title="Тезисы этого выпуска не собраны: лимит AI-воркера">сбой выпуска</span>` : ""}${imp}<span class="pub">${fmtDT(it.published_at)}</span><button class="fold" title="свернуть/развернуть" aria-expanded="true">▾</button></span>
     </div>
-    <h2><a href="${esc(it.url)}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
+    <h2><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
     <ol class="takeaways">${items}</ol>
     ${foot}
   </article>`;
@@ -573,7 +576,12 @@ document.getElementById("feed").addEventListener("click", (e) => {
 document.getElementById("fold-all").onclick = () => {
   const btn = document.getElementById("fold-all");
   const fold = btn.textContent.trim().startsWith("свернуть");
-  document.querySelectorAll("#feed .card").forEach(c => c.classList.toggle("folded", fold));
+  document.querySelectorAll("#feed .card").forEach(c => {
+    c.classList.toggle("folded", fold);
+    /* aria-expanded — синхронно с классом, как у одиночного fold в делегате */
+    const b = c.querySelector(".fold");
+    if (b) b.setAttribute("aria-expanded", fold ? "false" : "true");
+  });
   btn.textContent = fold ? "развернуть все" : "свернуть все";
 };
 
@@ -586,7 +594,13 @@ document.getElementById("q").oninput = (e) => {
 async function refresh() {
   try {
     const j = await (await fetch("./digest.json", { cache: "no-store" })).json();
-    ALL = j.items || [];
+    /* гвард структуры: доступный файл без items — это не «файл недоступен» */
+    if (!j || !Array.isArray(j.items)) {
+      document.getElementById("meta").innerHTML = `<span class="dot err"></span><span>структура digest.json неожиданна</span>`;
+      document.getElementById("feed").innerHTML = `<div class="empty"><b>Структура digest.json неожиданна</b>Файл доступен, но поле items отсутствует или не является списком. Обнови страницу или зайди позже.</div>`;
+      return;
+    }
+    ALL = j.items;
     renderMeta(j); renderChips(); renderTabs(); render();
   } catch (e) {
     document.getElementById("meta").innerHTML = `<span class="dot err"></span><span>digest.json недоступен</span>`;

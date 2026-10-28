@@ -192,6 +192,24 @@
   .imp.mid { color: var(--blue); background: color-mix(in srgb, var(--blue) 8%, transparent); border-color: color-mix(in srgb, var(--blue) 20%, transparent); }
   .imp.lo { color: var(--muted); background: var(--surface2); border-color: var(--border-strong); }
 
+  /* -- Сбой выпуска (Task 183): честная маркировка заглушек воркера -------- */
+  .fail-badge {
+    font: 700 10.5px var(--mono); letter-spacing: .06em; text-transform: uppercase;
+    color: var(--err); background: color-mix(in srgb, var(--err) 8%, transparent);
+    border: 1px solid color-mix(in srgb, var(--err) 30%, transparent);
+    padding: 2px 8px; border-radius: 999px; white-space: nowrap;
+  }
+  .fail-note { color: var(--muted); font-style: italic; }
+  .fail-banner {
+    background: color-mix(in srgb, var(--err) 5%, var(--surface));
+    border: 1px solid color-mix(in srgb, var(--err) 28%, transparent);
+    border-left: 3px solid var(--err);
+    border-radius: var(--ds-radius); padding: 14px 18px; margin: 4px 0 16px;
+    font-size: 14px; line-height: 1.55; color: var(--muted);
+  }
+  .fail-banner b { color: var(--err); }
+  .date-sep .d-fail { color: var(--err); }
+
   #totop {
     position: fixed; right: 20px; bottom: 20px; width: 44px; height: 44px; border-radius: 50%;
     background: var(--surface); border: 1px solid var(--border); color: var(--muted); font-size: 18px;
@@ -309,7 +327,7 @@
   <div class="wrap">
     <div class="foot">
       <span class="legal">информационный сервис · не ветеринарный совет · <a href="./terms.html">условия и дисклеймер</a></span>
-      <span>данные: <a href="./digest.xml">RSS</a> · <a href="./digest.json">digest.json</a>, обновляется воркером по крону · <a href="https://shray77.github.io/rss-core-site/">статус конвейера →</a> · <a href="https://github.com/shray77/vetdigest">репозиторий</a></span>
+      <span>данные: <a href="./digest.xml">RSS</a> · <a href="./digest.json">digest.json</a>, обновляется воркером по крону · <a href="https://shray77.github.io/rss-core-site/">статус конвейера →</a> · <a href="https://github.com/shray77/vetdigest-site">репозиторий</a></span>
     </div>
     <ol class="fnotes">
       <li><sup>1</sup>imp — скор влияния на практику (0–100): цифры и дозы, клиника, крупные болезни; считает воркер при сборке выпуска.</li>
@@ -323,7 +341,7 @@
 <button id="totop" title="наверх">↑</button>
 
 <script>
-let ALL = [], q = "", src = "", issue = null, lastGen = null;
+let ALL = [], q = "", src = "", issue = null, lastGen = null, metaNote = "";
 
 const timeAgo = (iso) => {
   const ms = Date.now() - new Date(iso).getTime();
@@ -336,7 +354,15 @@ const timeAgo = (iso) => {
   return Math.floor(h / 24) + " дн назад";
 };
 const fmtDay = (s) => new Date(s + "T00:00:00Z").toLocaleDateString("ru-RU", { day: "numeric", month: "long", year: "numeric" });
-const fmtDT = (s) => s ? new Date(s.includes("T") ? s : s.replace(" ", "T") + "Z").toLocaleDateString("ru-RU", { day: "numeric", month: "short" }) : "—";
+const fmtDT = (s) => {
+  if (!s) return "—";
+  const d = new Date(s.includes("T") ? s : s.replace(" ", "T") + "Z");
+  if (isNaN(d)) return "—";
+  const opts = { day: "numeric", month: "short" };
+  /* Task 183: ahead-of-print статьи датированы будущим — без года «1 янв.» читается как прошлое */
+  if (d > new Date() || d.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
+  return d.toLocaleDateString("ru-RU", opts).replace(/\s*г\.$/, "");
+};
 
 /* дата в мастхеде — как у газеты: сегодняшний номер */
 (function(){
@@ -355,15 +381,23 @@ const hi = (escaped) => {
   return escaped.replace(new RegExp(needle, "gi"), (m) => `<mark>${m}</mark>`);
 };
 
+/* Task 183: заглушки воркера («— (ошибка AI: …)») — это сбой выпуска, а не контент */
+const FAIL_RE = /^—\s*\(ошибка AI/i;
+const isFail = (it) => typeof it.takeaways === "string" && FAIL_RE.test(it.takeaways.trim());
+const FAIL_NOTE = "Тезисы не собраны: в день выпуска исчерпан лимит AI-воркера. Первоисточник открывается по ссылке.";
+
 function parseTakeaways(text) {
   return String(text).split(/\n+/).map(l => l.trim()).filter(Boolean)
     .map(l => { const m = l.match(/^(\d)\)\s*(.*)$/); return m ? { n: +m[1], t: m[2] } : { n: null, t: l }; });
 }
 
 function card(it, hero) {
-  const items = parseTakeaways(it.takeaways)
+  const fail = isFail(it);
+  const items = fail
+    ? `<li class="fail-note">${FAIL_NOTE}</li>`
+    : parseTakeaways(it.takeaways)
     .map(t => `<li>${t.n ? `<span class="t-num">${t.n}</span>` : ""}<span>${hi(esc(t.t))}</span></li>`).join("");
-  const imp = it.impact == null ? "" :
+  const imp = (fail || it.impact == null) ? "" :
     `<span class="imp ${it.impact >= 70 ? "hi" : it.impact >= 50 ? "mid" : "lo"}" title="скор влияния на практику: цифры/дозы, клиника, крупные болезни">imp ${it.impact}</span>`;
   const foot = `<div class="card-foot"><a href="${esc(it.url)}" target="_blank" rel="noopener">открыть источник ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>`;
   if (hero) {
@@ -378,12 +412,18 @@ function card(it, hero) {
   return `<article class="card">
     <div class="card-top">
       <span class="chip">${esc(srcCard(it.source_id))}</span>
-      <span class="right">${imp}<span class="pub">${fmtDT(it.published_at)}</span><button class="fold" title="свернуть/развернуть" aria-expanded="true">▾</button></span>
+      <span class="right">${fail ? `<span class="fail-badge" title="Тезисы этого выпуска не собраны: лимит AI-воркера">сбой выпуска</span>` : ""}${imp}<span class="pub">${fmtDT(it.published_at)}</span><button class="fold" title="свернуть/развернуть" aria-expanded="true">▾</button></span>
     </div>
     <h2><a href="${esc(it.url)}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
     <ol class="takeaways">${items}</ol>
     ${foot}
   </article>`;
+}
+
+/* баннер полностью проваленного выпуска: честное сообщение вместо подмены ошибкой */
+function failBanner(d) {
+  const n = [...new Set(ALL.map(i => i.digest_date))].sort().indexOf(d) + 1;
+  return `<div class="fail-banner" role="status"><b>Выпуск № ${n} от ${fmtDay(d)} не собран</b> — в этот день исчерпан дневной лимит AI-воркера. Заголовки и ссылки на первоисточники показаны как есть; тезисы появятся после пересборки конвейером.</div>`;
 }
 
 function render() {
@@ -405,11 +445,16 @@ function render() {
   }
   const useHero = !q && !src && issue !== "*" && issue === dates[0] && list.length > 1;
   let html = "", rest = list;
+  /* Task 183: выпуск собран целиком из заглушек — баннер вместо нормального вида */
+  if (!q && !src && issue !== "*" && list.length > 0 && list.every(isFail)) html += failBanner(issue);
   if (useHero) {
-    /* hero = максимальный impact выпуска (воркер считает скор на публике) */
-    const hero = list.reduce((b, it) => ((it.impact ?? 0) > (b.impact ?? 0) ? it : b), list[0]);
-    html += card(hero, true);
-    rest = list.filter(it => it !== hero);
+    /* hero = максимальный impact выпуска; заглушки сбоя в лид не идут (Task 183) */
+    const ok = list.filter(it => !isFail(it));
+    if (ok.length) {
+      const hero = ok.reduce((b, it) => ((it.impact ?? 0) > (b.impact ?? 0) ? it : b), ok[0]);
+      html += card(hero, true);
+      rest = list.filter(it => it !== hero);
+    }
   }
   const datesAsc = [...new Set(ALL.map(i => i.digest_date))].sort();
   let last = "";
@@ -417,7 +462,8 @@ function render() {
     if (issue === "*" && it.digest_date !== last) {
       last = it.digest_date;
       const cnt = list.filter(x => x.digest_date === it.digest_date).length;
-      html += `<div class="date-sep"><span class="d-no">№ ${datesAsc.indexOf(it.digest_date) + 1}</span><span>${fmtDay(it.digest_date)}</span><span class="d-count">${cnt} ${cnt % 10 === 1 && cnt % 100 !== 11 ? "статья" : "статей"}</span></div>`;
+      const allFail = cnt > 0 && list.filter(x => x.digest_date === it.digest_date).every(isFail);
+      html += `<div class="date-sep"><span class="d-no">№ ${datesAsc.indexOf(it.digest_date) + 1}</span><span>${fmtDay(it.digest_date)}</span><span class="d-count">${cnt} ${cnt % 10 === 1 && cnt % 100 !== 11 ? "статья" : "статей"}</span>${allFail ? `<span class="d-fail">выпуск не собран</span>` : ""}</div>`;
     }
     html += card(it, false);
   }
@@ -438,7 +484,7 @@ function renderTabs() {
 function tickMeta() {
   if (!lastGen) return;
   const t = document.querySelector("#meta .t");
-  if (t) t.textContent = "обновлено " + timeAgo(lastGen);
+  if (t) t.textContent = "обновлено " + timeAgo(lastGen) + metaNote;
 }
 
 /* спарклайн: статей на выпуск (орнамент = данные, vet-ds .ds-spark) */
@@ -478,15 +524,23 @@ const stat = (v, label, cls) =>
 
 function renderMeta(j) {
   lastGen = j.generated_at;
-  const failed = j.items.filter(i => i.takeaways.includes("ошибка AI")).length;
+  const items = Array.isArray(j.items) ? j.items : [];
+  /* Task 183: свежесть считаем по последнему выпуску — архив не маскирует провал дня */
+  const allDates = [...new Set(items.map(i => i.digest_date))].filter(Boolean).sort();
+  const lastDate = allDates[allDates.length - 1];
+  const lastItems = lastDate ? items.filter(i => i.digest_date === lastDate) : [];
+  const failedLast = lastItems.filter(isFail).length;
+  const dead = lastItems.length > 0 && failedLast === lastItems.length;
+  metaNote = dead ? ` · выпуск ${fmtDT(lastDate)} не собран` : "";
   document.getElementById("meta").innerHTML =
-    `<span class="dot ${failed < j.items.length ? "ok" : "err"}"></span>` +
-    `<span class="t">обновлено ${timeAgo(j.generated_at)}</span>`;
-  const sources = [...new Set(j.items.map(i => i.source_id))];
-  const dates = [...new Set(j.items.map(i => i.digest_date))].sort();
-  const perIssue = dates.map(d => j.items.filter(i => i.digest_date === d).length).slice(-14);
+    `<span class="dot ${dead ? "err" : "ok"}"></span>` +
+    `<span class="t">обновлено ${timeAgo(j.generated_at)}${metaNote}</span>`;
+  const failed = items.filter(i => typeof i.takeaways === "string" && i.takeaways.includes("ошибка AI")).length;
+  const sources = [...new Set(items.map(i => i.source_id))];
+  const dates = [...new Set(items.map(i => i.digest_date))].sort();
+  const perIssue = dates.map(d => items.filter(i => i.digest_date === d).length).slice(-14);
   document.getElementById("stats").innerHTML =
-    stat(j.items.length, "статей в дайджесте") +
+    stat(items.length, "статей в дайджесте") +
     stat(sources.length, "источников науки") +
     stat(dates.length, "выпусков в архиве") +
     stat(failed ? "⚠ " + failed : "✓ 0", "ошибок обработки", failed ? "warn" : "ok");

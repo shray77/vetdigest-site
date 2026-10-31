@@ -1,7 +1,128 @@
 {
   "service": "vetdigest",
-  "generated_at": "2026-10-30T07:01:25.763Z",
+  "generated_at": "2026-10-31T07:01:18.217Z",
   "items": [
+    {
+      "fingerprint": "e7271e4ed89d41a72d7afe8eb8691b83154d0e59",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-infectious",
+      "title": "Heat stress enhances Klebsiella pneumoniae -induced cellular injury and impairs milk fat synthesis in bovine mammary epithelial cells.",
+      "url": "https://doi.org/10.1080/01652176.2026.2747449",
+      "published_at": "2026-12-31T00:00:00.000Z",
+      "takeaways": "1) Исследовалось влияние теплового стресса на клетки эпителия молочной железы крупного рогатого скота при инфицировании Klebsiella pneumoniae.\n2) Тепловой стресс усиливает клеточное повреждение и нарушает синтез молочного жира, снижая экспрессию генов, связанных с липогенезом, и увеличивая активацию про-воспалительных цитокинов.\n3) Это исследование меняет подход к лечению мастита в условиях теплового стресса, подчеркивая необходимость комплексного подхода к поддержанию здоровья молочной железы и снижению воспаления.",
+      "dup_count": 2,
+      "impact": 62
+    },
+    {
+      "fingerprint": "44beb055ad6310f651ddd604ba8bafedddd94aea",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-equine-medicine",
+      "title": "Influence of the anaesthetist&#xb4;s perception on the evaluation of recovery quality in horses undergoing general anaesthesia.",
+      "url": "https://doi.org/10.1016/j.vas.2026.100899",
+      "published_at": "2026-12-01T00:00:00.000Z",
+      "takeaways": "1) Исследовалось влияние восприятия анестезиолога на оценку качества восстановления после общей анестезии у лошадей.\n2) Оценки восстановления, сделанные анестезиологами в реальном времени, были значительно лучше, чем оценки, сделанные на основе видеозаписей, со средними баллами 2 и 4 для простой и детальной шкал соответственно.\n3) Это исследование указывает на необходимость объективной оценки восстановления после анестезии, поскольку анестезиологи могут испытывать оптимистический предвзятость при оценке своих пациентов в реальном времени.",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "8f60f6cef51bd3b6d96235b563623ed5fd0343b7",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-infectious",
+      "title": "The persistence and transmission of mcr -mediated colistin resistance in E. coli from pigs, farmers, and farm environments after colistin withdrawal in Thailand.",
+      "url": "https://doi.org/10.1016/j.onehlt.2026.101613",
+      "published_at": "2026-12-01T00:00:00.000Z",
+      "takeaways": "1) Исследовали сохранение и передачу колистин-резистентности, опосредованной геном mcr, у E. coli, выделенных от свиней, фермеров и окружающей среды ферм в Таиланде после отмены использования колистина.\n2) Основным результатом стало обнаружение колистин-резистентных E. coli в 91,73% из 266 образцов, при этом 93,5% изолятов несли гены mcr, преимущественно mcr-1 и mcr-3.\n3) Это исследование меняет подход к практике, подчеркивая необходимость усиления наблюдения, мониторинга и ужесточения политики в отношении использования антибиотиков для предотвращения распространения резистентных штаммов E. coli.",
+      "dup_count": 1,
+      "impact": 95
+    },
+    {
+      "fingerprint": "f1a2e5bef19f133f7dfbf82b5808ff9065cfe4f4",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-infectious",
+      "title": "Rat hepatitis E virus and novel paramyxoviruses in synanthropic rodents and shrews in Kenya.",
+      "url": "https://doi.org/10.1016/j.onehlt.2026.101625",
+      "published_at": "2026-12-01T00:00:00.000Z",
+      "takeaways": "1) Исследовали вирусную нагрузку грызунов и землероек в Кении на предмет наличия потенциально зоонотических вирусов.\n2) Обнаружили вирус гепатита Е у крыс и мышей, а также новые парамиксовирусы у разных видов грызунов и землероек, с выявлением двух почти полных геномов гепатита Е и одного полного генома нового джейлонгвируса.\n3) Это исследование подчеркивает необходимость постоянного геномного мониторинга зоонотических вирусов для снижения риска их передачи человеку, особенно в районах с высокой плотностью населения и близким контактом между людьми и дикими животными.",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "e4ac79546cd4ce1eeede4f3d2ad85acb33a6cb7c",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-imaging",
+      "title": "Carotid body carcinoma in a French bulldog treated with toceranib phosphate.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42960229/",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "takeaways": "1) Исследовали эффективность препарата тосераниб фосфат в лечении каротидного тела карциномы у французского бульдога.\n2) Главный результат — улучшение клинических симптомов и уменьшение опухоли после лечения тосераниб фосфатом, с увеличением интратуморальной некроза и временем стабильности около 5 месяцев.\n3) Это меняет подход к лечению каротидного тела карциномы у собак, поскольку тосераниб фосфат может быть потенциальной терапевтической опцией для собак с неоперабельными или частично удаленными каротидными телами карциномы.",
+      "dup_count": 2,
+      "impact": 90
+    },
+    {
+      "fingerprint": "232d2b6b3a0062324bf63ad6e573feeb98859ccf",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-imaging",
+      "title": "Clinical and 18 F-FDG PET/CT imaging features in a dog with bacterial sepsis of unknown origin.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42960181/",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "takeaways": "1) Исследовали применение метода позитронно-эмиссионной томографии с 2-дезокси-2-[фтор-18]фторо-D-глюкозой, интегрированной с компьютерной томографией (18F-FDG PET/CT), для диагностики сепсиса неизвестного происхождения у собак.\n2) Главный результат: метод 18F-FDG PET/CT выявил умеренную, пятнистую активность FDG и отек мягких тканей в области левого запястья и голеностопного сустава, а также умеренную гетерогенную гиперметаболическую активность селезенки и печени, с максимальными значениями SUV 7,18, 5,58, 3,42 и 6,22 соответственно.\n3) Это исследование меняет подход к диагностике и лечению сепсиса у собак, особенно у животных с ослабленным иммунитетом, где своевременная и точная диагностика имеет решающее значение для управления случаем и прогноза.",
+      "dup_count": 1,
+      "impact": 62
+    },
+    {
+      "fingerprint": "1309ee98897572bc53eca3aaeea3bbeff4bd4b9f",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-imaging",
+      "title": "Ultrasonographic features and clinical outcome of an anaplastic carcinoma arising from a uterus masculinus in an intact, non-cryptorchid male dog.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42959866/",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "takeaways": "1) Исследовали случай анаπλαстического карциномы, развившейся из мужского матки (uterus masculinus) у собаки-самца.\n2) Главный результат: обнаружили большую, парапростатическую, жидкостную структуру с эхогенным содержимым и прилегающую гетерогенную опухоль, которая оказалась анаπλαстическим карциномой с агрессивным поведением.\n3) Это меняет подход к диагностике парапростатических кавитарных образований у собак-самцов, даже в отсутствие крипторхизма, и подчеркивает необходимость рассматривать возможность малигнизации остатков Мюллеровых протоков.",
+      "dup_count": 2,
+      "impact": 62
+    },
+    {
+      "fingerprint": "80e381c2ea5ebd6c3df8b662f0177308ad5c2d03",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-feline-medicine",
+      "title": "Evaluating access to care from the perspective of companion animal \"care deserts\" in Ontario.",
+      "url": "https://doi.org/10.25318/4610009201-eng",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "takeaways": "1) Исследовалось распределение доступа к ветеринарным услугам для домашних животных в провинции Онтарио, Канада.\n2) Были выявлены кластеры с низкой и высокой плотностью ветеринарных клиник, причем один из низкоплотных кластеров расположился в районе Большого Торонто, несмотря на высокую плотность населения.\n3) Это исследование может изменить распределение ресурсов для ветеринарной помощи, особенно в районах с низкой плотностью ветеринарных клиник, что важно для обеспечения доступа к ветеринарным услугам для домашних животных.",
+      "dup_count": 1,
+      "impact": 40
+    },
+    {
+      "fingerprint": "c84a4d552efdb48c85fe42cb19b25d2db296baa7",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-dermatology",
+      "title": "Neglected but Not Harmless: Characterising Nonantibiotic Antimicrobial Use in Small Animal Practices in Colombia.",
+      "url": "https://doi.org/10.1002/vms3.71303",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "takeaways": "1) Исследовали использование неантибиотических антимикробных препаратов в ветеринарной практике для мелких животных в Колумбии.\n2) Основным результатом стало то, что неантибиотические антимикробные препараты составили значительную часть назначений, причем 49,9% из них были топическими антисептиками, а 22% содержали активное вещёство хлоргексидин.\n3) Это меняет практику тем, что подчеркивает необходимость формальной интеграции неантибиотических антимикробных препаратов в программы наблюдения и регуляторные рамки для улучшения стюардшипа антимикробных препаратов.",
+      "dup_count": 2,
+      "impact": 95
+    },
+    {
+      "fingerprint": "37bf19c83cd50228b3079248f17d1b1fe0ffea93",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-surgery",
+      "title": "Evaluating planned surgical margins for complete resection of soft tissue sarcoma in dogs: 31 cases.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42960214/",
+      "published_at": "2026-11-01T00:00:00.000Z",
+      "takeaways": "1) Исследовалось влияние размера хирургических марж на полное удаление сарком мягких тканей у собак.\n2) Полное удаление опухоли было достигнуто в 88% случаев при марже 1-1,5 см, в 91% случаев при марже 2-2,5 см и в 92% случаев при марже 3 см.\n3) Результаты исследования могут изменить подход к хирургическому лечению сарком мягких тканей у собак, позволяя использовать меньшие маржи и сохранять больше здоровых тканей.",
+      "dup_count": 1,
+      "impact": 80
+    },
+    {
+      "fingerprint": "68bcc7a57e066754bf6c4ad3c07539257588aaa5",
+      "digest_date": "2026-10-31",
+      "source_id": "pubmed-vet-oncology",
+      "title": "A global men's health epidemiology within an intersectional framework.",
+      "url": "https://doi.org/10.1016/S0140-6736(26)01490-X",
+      "published_at": "2026-10-31T00:00:00.000Z",
+      "takeaways": "1) Исследовалось распределение показателей здоровья среди мужчин в разных социальных контекстах.\n2) Основные факторы, способствующие плохому здоровью мужчин, включают заболевания сердца, онкологию, наркозависимость, суицид, травмы и респираторные инфекции, что приводит к более высокой смертности и большему количеству лет, скорректированных на нетрудоспособность (DALYs).\n3) Это исследование подчеркивает необходимость учета пересечения социальных и экономических факторов в формировании здоровья мужчин, что может привести к разработке более эффективных профилактических и терапевтических стратегий.",
+      "dup_count": 1,
+      "impact": 50
+    },
     {
       "fingerprint": "6d09b6d3be3505bdad4b55d1a58b539e2001e94b",
       "digest_date": "2026-10-30",
@@ -384,7 +505,7 @@
       "url": "https://doi.org/10.1016/j.parint.2026.103416",
       "published_at": "2026-10-26T00:00:00.000Z",
       "takeaways": "1) Исследовалось влияние инфекции Entamoeba invadens на смертность среди молодых морских черепах в неволе.\n2) Основным результатом стало выявление Entamoeba invadens как причины системной амебиазы с тяжелыми некротизирующими поражениями кишечника, печени и легких у 15 молодых морских черепах.\n3) Это открытие меняет подход к диагностике и лечению системной амебиазы у морских черепах, имея важные последствия для сохранения этих животных и экологии дикой природы.",
-      "dup_count": 2,
+      "dup_count": 1,
       "impact": 72
     },
     {
@@ -395,7 +516,7 @@
       "url": "https://doi.org/10.1371/journal.pntd.0014491",
       "published_at": "2026-10-26T00:00:00.000Z",
       "takeaways": "1) Исследовалось действие различных соединений на личиночную стадию Fasciola hepatica.\n2) Были выявлены новые соединения с высоким антгельминтным эффектом, включая MMV665807 (IC50: 44 нМ), никлозамид (IC50: 32 нМ) и никлозамид этаноламин (IC50: 9 нМ).\n3) Разработка нового метода скрининга может привести к открытию новых препаратов для лечения фасциолоза и помочь бороться с устойчивостью к существующим лекарствам.",
-      "dup_count": 2,
+      "dup_count": 1,
       "impact": 62
     },
     {
@@ -441,138 +562,6 @@
       "takeaways": "1) Исследовали эффективность химиотерапевтических протоколов COP и CHOP при лечении лимфомы у кошек.\n2) Главный результат: нет статистически значимой разницы в общих показателях ответа на лечение между протоколами COP (83,0%) и CHOP (77,0%).\n3) Это означает, что добавление доксорубицина в химиотерапию (протокол CHOP) не дает значительного преимущества в лечении лимфомы у кошек, что может изменить подход к выбору химиотерапевтического протокола в ветеринарной практике.",
       "dup_count": 1,
       "impact": 90
-    },
-    {
-      "fingerprint": "6794d56d20dd5bd8b038db643d052eeadd9b0286",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-vet-anesthesia",
-      "title": "Haemodynamic and Respiratory Effects of Dexmedetomidine as an Adjuvant to Oxycodone Patient-Controlled Analgesia After Lumbar Spinal Fusion: A Post Hoc Analysis of the DoseRespDex Randomised Controlled Trial.",
-      "url": "https://doi.org/10.1111/aas.70362",
-      "published_at": "2027-01-01T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
-    },
-    {
-      "fingerprint": "484f59334ccc1befe2ddbea6a9d90254778b8150",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-vet-imaging",
-      "title": "Imaging Features of Adrenal Glands Infiltration by Multicentric Lymphoma in Dogs and Cats.",
-      "url": "https://doi.org/10.1111/vru.70233",
-      "published_at": "2026-11-01T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 2,
-      "impact": 40
-    },
-    {
-      "fingerprint": "4361ff49b921a1ac7cb4c9bac5a06e629c5ba59f",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-vet-imaging",
-      "title": "Ultrasound Biomicroscopy Analysis of Ciliary Cleft, Ciliary Body, and Ciliary Muscle Changes Following Capsular Tension Ring Implantation in Dogs.",
-      "url": "https://doi.org/10.1111/vop.70284",
-      "published_at": "2026-11-01T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
-    },
-    {
-      "fingerprint": "0a4e11a3486378d237fd35f19f8c405fcc55326f",
-      "digest_date": "2026-10-27",
-      "source_id": "eupmc-vet-preprints",
-      "title": "Characterization and evaluation of the anti-streptococcal activity of a novel zoocin A-like endopeptidase for potential veterinary applications",
-      "url": "https://doi.org/10.64898/2026.10.23.760966",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
-    },
-    {
-      "fingerprint": "1d96300c9357640a20b73146cc0beddff370cd31",
-      "digest_date": "2026-10-27",
-      "source_id": "eupmc-vet-preprints",
-      "title": "Risk-Factors of Crimean-Congo Haemorrhagic Fever Across Six Tertiary Hospitals in Afghanistan from 2022 to 2025: Reported Exposures, Healthcare-Worker Clustering, and Ribavirin Treatment-Timing Analyses",
-      "url": "https://doi.org/10.64898/2026.10.24.26366389",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
-    },
-    {
-      "fingerprint": "b3efaa677ed4acce7ee493b641773a25664f219f",
-      "digest_date": "2026-10-27",
-      "source_id": "eupmc-vet-preprints",
-      "title": "Carcass characteristics of dual-purpose chicken genotypes under natural and irrigated-lucerne foraging systems at Matopos Research Station, Zimbabwe",
-      "url": "https://doi.org/10.21203/rs.3.rs-11469134/v1",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
-    },
-    {
-      "fingerprint": "4f25f2b46be79d4ab544c98b13b53349536b20cb",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-vet-infectious",
-      "title": "L-Histidine resensitizes multidrug-resistant bacteria to carbapenems by inhibiting New Delhi metallo-&#x3b2;-lactamase activity.",
-      "url": "https://doi.org/10.1371/journal.ppat.1014728",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
-    },
-    {
-      "fingerprint": "4cf5b31f0d9aec6ff282335103c2bca3d2a5c530",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-bovine-mastitis",
-      "title": "Educational impact of a bacteriological training program and field assessment of antimicrobial susceptibility testing among bovine veterinarians in Japan.",
-      "url": "https://doi.org/10.1292/jvms.26-0328",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 55
-    },
-    {
-      "fingerprint": "040090c47633c4fa02199b4f200e7263fdb87a9f",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-vet-parasitology",
-      "title": "Beyond the reservoir: rethinking wildlife contributions to Fasciola transmission in multihost landscapes.",
-      "url": "https://doi.org/10.1017/S0022149X26102417",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
-    },
-    {
-      "fingerprint": "167f10dc4c659545ca968d941d61475dab4474af",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-vet-parasitology",
-      "title": "Evaluation of an automated faecal egg count system for enumeration of ascarid ova in chickens.",
-      "url": "https://doi.org/10.1017/S0022149X26102533",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
-    },
-    {
-      "fingerprint": "04c4b1137f67c14afd0c0b1e4a8d417965cc196f",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-vet-anesthesia",
-      "title": "Safety of the Use of Interpolation Flaps in Combination With Random Pattern Flaps or Skin Grafts for Repair of Post-Mohs Surgical Defects: A Cohort Study.",
-      "url": "https://doi.org/10.1097/DSS.0000000000005399",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 50
-    },
-    {
-      "fingerprint": "8b4d63c7e767c0404e3cd8571c4c537c7a7a7157",
-      "digest_date": "2026-10-27",
-      "source_id": "pubmed-vet-anesthesia",
-      "title": "Beyond denial: A case report illustrating the complexity of disengagement in advanced cancer care.",
-      "url": "https://doi.org/10.1017/S1478951526103459",
-      "published_at": "2026-10-26T00:00:00.000Z",
-      "takeaways": "— (ошибка AI: 4006: you have used up your daily free allocation of 10,000 neurons, please upgrade to Cloudflare's Workers Paid plan if you would like to continue us)",
-      "dup_count": 1,
-      "impact": 40
     }
   ]
 }

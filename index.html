@@ -400,8 +400,11 @@ function card(it, hero) {
     ? `<li class="fail-note">${FAIL_NOTE}</li>`
     : parseTakeaways(it.takeaways)
     .map(t => `<li>${t.n ? `<span class="t-num">${t.n}</span>` : ""}<span>${hi(esc(t.t))}</span></li>`).join("");
+  /* Task 223 (аудит SW-27, №1 Medium): impact пишется воркером/AI в digest.json —
+     вставляется через esc() как текст, а не как HTML (тот же механизм, что у
+     заголовков и тезисов); классы hi/mid/lo сравнивают приведённое к числу */
   const imp = (fail || it.impact == null) ? "" :
-    `<span class="imp ${it.impact >= 70 ? "hi" : it.impact >= 50 ? "mid" : "lo"}" title="скор влияния на практику: цифры/дозы, клиника, крупные болезни">imp ${it.impact}</span>`;
+    `<span class="imp ${Number(it.impact) >= 70 ? "hi" : Number(it.impact) >= 50 ? "mid" : "lo"}" title="скор влияния на практику: цифры/дозы, клиника, крупные болезни">imp ${esc(String(it.impact))}</span>`;
   const foot = `<div class="card-foot"><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">открыть источник ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>`;
   if (hero) {
     /* лид номера: kicker + imp над заголовком, источник — в подвале карточки */
@@ -479,7 +482,7 @@ function renderTabs() {
   const el = document.getElementById("issue-tabs");
   if (dates.length < 2) { el.innerHTML = ""; return; }
   el.innerHTML =
-    dates.map(d => `<button class="chip-btn ${issue === d ? "active" : ""}" data-d="${d}">№ ${datesAsc.indexOf(d) + 1} · ${fmtDT(d)}</button>`).join("") +
+    dates.map(d => `<button class="chip-btn ${issue === d ? "active" : ""}" data-d="${esc(d)}">№ ${datesAsc.indexOf(d) + 1} · ${fmtDT(d)}</button>`).join("") +
     `<button class="chip-btn ${issue === "*" ? "active" : ""}" data-d="*">все выпуски</button>`;
   el.querySelectorAll(".chip-btn").forEach(b => b.onclick = () => { issue = b.dataset.d; renderTabs(); render(); });
 }
@@ -559,7 +562,7 @@ function renderChips() {
   const cnt = (s) => ALL.filter(i => i.source_id === s).length;
   document.getElementById("chips").innerHTML =
     `<button class="chip-btn ${!src ? "active" : ""}" data-s="">все (${ALL.length})</button>` +
-    sources.map(s => `<button class="chip-btn ${src === s ? "active" : ""}" data-s="${s}">${esc(srcChip(s))} (${cnt(s)})</button>`).join("");
+    sources.map(s => `<button class="chip-btn ${src === s ? "active" : ""}" data-s="${esc(s)}">${esc(srcChip(s))} (${cnt(s)})</button>`).join("");
   document.querySelectorAll("#chips .chip-btn").forEach(b => b.onclick = () => { src = b.dataset.s; renderChips(); render(); });
 }
 

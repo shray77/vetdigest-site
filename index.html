@@ -48,6 +48,9 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
+  /* Task 223 (QA П8): smooth-scroll — не анимация, PRM-гаситель ДС его не
+     накрывает; вестибулярным пользователям — мгновенный прыжок */
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   input::placeholder { color: var(--faint); opacity: 1; }
   body { background: var(--bg); color: var(--text); font: 16px/1.6 var(--ds-font-sans); margin: 0; font-variant-numeric: tabular-nums; }
@@ -105,6 +108,9 @@
     border-radius: 10px; padding: 9px 14px; font-size: 14px; outline: none;
   }
   #q:focus { border-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+  /* Task 223 (QA П4): id-селектор #q{outline:none} перебивал глобальный
+     :focus-visible — у главного контрола страницы снова есть контур фокуса */
+  #q:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .chips { display: flex; gap: 8px; flex-wrap: wrap; }
   .chip-btn {
     background: var(--surface); border: 1px solid var(--border); color: var(--muted);
@@ -132,16 +138,20 @@
     border-radius: var(--ds-radius); padding: 18px 20px 14px; margin-bottom: 14px; transition: border-color .15s;
   }
   .card:hover { border-left-color: var(--accent); }
-  .card-top { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+  .card-top { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 8px; cursor: pointer; }
   .card-top .right { display: flex; gap: 8px; align-items: center; }
   .chip {
     font: 11.5px var(--mono); color: var(--blue); background: color-mix(in srgb, var(--blue) 8%, transparent);
     border: 1px solid color-mix(in srgb, var(--blue) 18%, transparent); padding: 3px 10px; border-radius: 999px;
+    /* Task 223 (QA П5-хвост): бейдж источника в узких card-top/card-foot
+       сжимался и вывозил строку за экран — одна строка с эллипсисом */
+    min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
   .pub { color: var(--faint); font-size: 12.5px; font-family: var(--mono); white-space: nowrap; }
   .fold {
-    background: none; border: 1px solid var(--border); color: var(--faint); width: 22px; height: 22px;
+    background: none; border: 1px solid var(--border); color: var(--faint); width: 24px; height: 24px;
     border-radius: var(--ds-radius-s); cursor: pointer; font-size: 10px; line-height: 1; padding: 0; transition: transform .15s;
+    flex: none; /* Task 223 (QA П5): flex-соседи сжимали шеврон ниже 24×24 — таргет фиксирован */
   }
   .fold:hover { color: var(--text); border-color: var(--ds-border-strong); }
   .card.folded .fold { transform: rotate(-90deg); }
@@ -154,7 +164,7 @@
   .takeaways li { display: flex; gap: 10px; color: var(--text); font-size: 14.5px; }
   .t-num {
     flex: none; width: 20px; height: 20px; border-radius: var(--ds-radius-s); margin-top: 2px;
-    background: var(--accent-dim); color: var(--accent); font: 700 11px var(--mono);
+    background: var(--accent-dim); color: var(--ds-accent-text); font: 700 11px var(--mono);
     display: grid; place-items: center;
   }
   .card-foot { display: flex; gap: 14px; align-items: center; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
@@ -176,9 +186,13 @@
   .card.hero h2::first-letter { font-size: 1.32em; line-height: 0; color: var(--accent); }
   .card.hero .takeaways li { font-size: 15px; }
   @media (min-width: 720px) { .card.hero .takeaways { grid-template-columns: 1fr 1fr; } }
+  /* Task 223 (QA П6): бейдж источника одинаков в лиде и ленте — синий, а не серый
+     (специфичность .card-foot span перекрашивала чип лida в faint) */
+  .card.hero .chip { color: var(--blue); }
 
   .empty { color: var(--muted); text-align: center; padding: 48px 0; }
   .empty b { display: block; font-size: 18px; color: var(--text); margin-bottom: 6px; }
+  .empty a { color: var(--blue); }
 
   .skel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--ds-radius); padding: 18px 20px; margin-bottom: 14px; }
   .sk { position: relative; overflow: hidden; background: var(--surface2); border-radius: var(--ds-radius-s); height: 12px; margin-bottom: 10px; }
@@ -188,7 +202,9 @@
   .sk.w40 { width: 40%; }
   .sk.w85 { width: 85%; }
   .imp { font: 700 10.5px var(--mono); padding: 2px 8px; border-radius: 999px; border: 1px solid; cursor: help; }
-  .imp.hi { color: var(--accent); background: var(--accent-dim); border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+  /* Task 223 (QA П3): чистый акцент на акцент-тинте = 4.33:1 — ниже AA;
+     токен --ds-accent-text (вет-ds v2.3.4, 5.13:1) — для текста на тинте */
+  .imp.hi { color: var(--ds-accent-text); background: var(--accent-dim); border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
   .imp.mid { color: var(--blue); background: color-mix(in srgb, var(--blue) 8%, transparent); border-color: color-mix(in srgb, var(--blue) 20%, transparent); }
   .imp.lo { color: var(--muted); background: var(--surface2); border-color: var(--border-strong); }
 
@@ -259,6 +275,12 @@
   .logo svg{width:20px;height:20px}
   h1{font-size:21px}
   .mast-meta{font-size:10.5px;flex-wrap:nowrap;white-space:nowrap;overflow:hidden}
+  /* Task 223 (QA Б1): дата номера не должна уезжать за экран на 375px —
+     эллипсис всем, кроме последнего ребёнка (паттерн vet-ds v2.5 MINOR 8
+     для .ds-masthead-meta — сюда локальный фикс не доехал) */
+  .mast-meta>*{min-width:0}
+  .mast-meta>:not(:last-child){overflow:hidden;text-overflow:ellipsis}
+  .mast-meta>:last-child{flex:none}
   .brand p{font-size:12.5px;line-height:1.4;margin:3px 0 0;
     display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
   .topbar .live,.topbar-right{flex-wrap:nowrap}
@@ -317,6 +339,11 @@
     <span class="count" id="count"></span>
   </div>
   <section id="feed">
+    <!-- Task 223 (QA Ш1): без JS — честное сообщение, а не вечный скелетон -->
+    <noscript>
+      <style>.skel{display:none}</style>
+      <div class="empty"><b>Нужен JavaScript</b>Дашборд собирается в браузере из digest.json. Включи JavaScript — или читай <a href="./digest.xml">RSS-выпуск</a>.</div>
+    </noscript>
     <div class="skel"><div class="sk w40"></div><div class="sk t"></div><div class="sk"></div><div class="sk w85"></div></div>
     <div class="skel"><div class="sk w40"></div><div class="sk t"></div><div class="sk w85"></div></div>
     <div class="skel"><div class="sk w40"></div><div class="sk t"></div><div class="sk"></div><div class="sk w85"></div></div>
@@ -363,6 +390,11 @@ const fmtDT = (s) => {
   if (d > new Date() || d.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
   return d.toLocaleDateString("ru-RU", opts).replace(/\s*г\.$/, "");
 };
+/* русская плюрализация: 1 статья / 2 статьи / 5 статей / 21 статья (Task 223, QA Б4) */
+const plural = (n, one, few, many) => {
+  const a = n % 10, b = n % 100;
+  return a === 1 && b !== 11 ? one : a >= 2 && a <= 4 && (b < 12 || b > 14) ? few : many;
+};
 
 /* дата в мастхеде — как у газеты: сегодняшний номер */
 (function(){
@@ -407,12 +439,14 @@ function card(it, hero) {
     `<span class="imp ${Number(it.impact) >= 70 ? "hi" : Number(it.impact) >= 50 ? "mid" : "lo"}" title="скор влияния на практику: цифры/дозы, клиника, крупные болезни">imp ${esc(String(it.impact))}</span>`;
   const foot = `<div class="card-foot"><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">открыть источник ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>`;
   if (hero) {
-    /* лид номера: kicker + imp над заголовком, источник — в подвале карточки */
+    /* лид номера: kicker + imp над заголовком, источник — в подвале карточки;
+       Task 223 (QA Б2): шеврон свёртки — как у обычных карточек, иначе после
+       «свернуть все» лид номера нельзя развернуть по отдельности */
     return `<article class="card hero">
-      <div class="hero-head"><span class="hero-kicker">Лид номера</span>${imp}<span class="rule"></span></div>
+      <div class="hero-head"><span class="hero-kicker">Лид номера</span>${imp}<span class="rule"></span><button class="fold" title="свернуть/развернуть" aria-expanded="true">▾</button></div>
       <h2><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">${hi(esc(it.title))}</a></h2>
       <ol class="takeaways">${items}</ol>
-      <div class="card-foot"><span class="chip">${esc(srcCard(it.source_id))}</span><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">открыть ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>
+      <div class="card-foot"><span class="chip">${esc(srcCard(it.source_id))}</span><a href="${esc(safeUrl(it.url))}" target="_blank" rel="noopener">открыть источник ↗</a><span>выпуск ${fmtDT(it.digest_date)}</span></div>
     </article>`;
   }
   return `<article class="card">
@@ -434,6 +468,9 @@ function failBanner(d) {
 
 function render() {
   const feed = document.getElementById("feed");
+  /* Task 223 (QA Б3): перерисовка всегда отдаёт карточки развёрнутыми —
+     синхронизируем ярлык fold-all, иначе он обещает «развернуть» свёрнутому нулю */
+  document.getElementById("fold-all").textContent = "свернуть все";
   const dates = [...new Set(ALL.map(i => i.digest_date))].sort().reverse();
   if (issue === null) issue = dates[0] || "*";
   const list = ALL.filter(it =>
@@ -446,7 +483,14 @@ function render() {
     : `показано ${list.length} из ${ALL.length}`;
 
   if (!list.length) {
-    feed.innerHTML = `<div class="empty"><b>Ничего не нашлось</b>Попробуй другой запрос или сбрось фильтр.</div>`;
+    /* Task 223 (QA П7/З1): пустое состояние ведёт к следующему шагу — кнопка
+     сброса здесь же + подсказка про раскладку для RU-пользователя */
+    feed.innerHTML = `<div class="empty"><b>Ничего не нашлось</b>Попробуй другой запрос, проверь раскладку — или <button class="chip-btn" type="button" id="resetFilters">сбросить фильтры</button></div>`;
+    document.getElementById("resetFilters").onclick = () => {
+      src = ""; q = ""; issue = null;
+      document.getElementById("q").value = "";
+      render(); renderTabs(); renderChips();
+    };
     return;
   }
   const useHero = !q && !src && issue !== "*" && issue === dates[0] && list.length > 1;
@@ -469,7 +513,7 @@ function render() {
       last = it.digest_date;
       const cnt = list.filter(x => x.digest_date === it.digest_date).length;
       const allFail = cnt > 0 && list.filter(x => x.digest_date === it.digest_date).every(isFail);
-      html += `<div class="date-sep"><span class="d-no">№ ${datesAsc.indexOf(it.digest_date) + 1}</span><span>${fmtDay(it.digest_date)}</span><span class="d-count">${cnt} ${cnt % 10 === 1 && cnt % 100 !== 11 ? "статья" : "статей"}</span>${allFail ? `<span class="d-fail">выпуск не собран</span>` : ""}</div>`;
+      html += `<div class="date-sep"><span class="d-no">№ ${datesAsc.indexOf(it.digest_date) + 1}</span><span>${fmtDT(it.digest_date)}</span><span class="d-count">${cnt} ${plural(cnt, "статья", "статьи", "статей")}</span>${allFail ? `<span class="d-fail">выпуск не собран</span>` : ""}</div>`;
     }
     html += card(it, false);
   }
@@ -541,7 +585,9 @@ function renderMeta(j) {
   document.getElementById("meta").innerHTML =
     `<span class="dot ${dead ? "err" : "ok"}"></span>` +
     `<span class="t">обновлено ${timeAgo(j.generated_at)}${metaNote}</span>`;
-  const failed = items.filter(i => typeof i.takeaways === "string" && i.takeaways.includes("ошибка AI")).length;
+  /* Task 223 (QA ЗЗ): один критерий «сбоя обработки» с лентой — префиксный
+     isFail (Task 183), а не подстрока «ошибка AI» где угодно */
+  const failed = items.filter(isFail).length;
   const sources = [...new Set(items.map(i => i.source_id))];
   const dates = [...new Set(items.map(i => i.digest_date))].sort();
   const perIssue = dates.map(d => items.filter(i => i.digest_date === d).length).slice(-14);
@@ -616,7 +662,7 @@ setInterval(tickMeta, 30 * 1000);
 
 const totop = document.getElementById("totop");
 addEventListener("scroll", () => totop.classList.toggle("show", scrollY > 600), { passive: true });
-totop.onclick = () => scrollTo({ top: 0, behavior: "smooth" });
+totop.onclick = () => scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
 </script>
 <script>
 (function(){

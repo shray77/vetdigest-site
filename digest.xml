@@ -6,6 +6,141 @@
     <description>Ежедневный дайджест ветеринарной науки на русском: PubMed + Europe PMC (препринты, AGRIS) -> Workers AI -> 3 тезиса для практики. Информационный сервис «как есть», не ветеринарная консультация: решения — только с ветеринарным врачом, проверяйте первоисточники. Условия: https://shray77.github.io/vetdigest-site/terms.html</description>
     <language>ru</language>
     <item>
+      <title>mRNA&amp;#x2011;Encoded Antibodies as a Powerful Arsenal Against Superbugs-Induced Sepsis.</title>
+      <link>https://doi.org/10.1002/ddr.70412</link>
+      <guid isPermaLink="false">e9da0f8d9ca626b395d04544cbef0b69dbaebcc0</guid>
+      <pubDate>Tue, 01 Dec 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось применение мРНК-энкодированных антител для борьбы с сепсисом, вызванным бактериями с множественной лекарственной устойчивостью.
+2) Главный результат — возможность использования мРНК для производства терапевтических антител в организме пациента, с потенциальным применением против ключевых бактериальных факторов вирулентности, таких как система секреции типа III (T3SS) Pseudomonas aeruginosa.
+3) Это может изменить практику лечения сепсиса, позволяя использовать персонализированные и адаптируемые методы лечения, объединяющие антипатогенную и иммуномодулирующую терапию для контроля инфекции и нормализации иммунного ответа.</description>
+    </item>
+    <item>
+      <title>An analytical workflow enabling selective enrichment of proteoglycans and heparin ligands from the human aorta.</title>
+      <link>https://doi.org/10.1016/j.mbplus.2026.100207</link>
+      <guid isPermaLink="false">27ab1068588840d846ff72b341555a6ee437288c</guid>
+      <pubDate>Tue, 01 Dec 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследователи разработали аналитический подход для выделения протеогликанов и гепаринсвязывающих лигандов из человеческой аорты.
+2) Были выявлены 1202 белка в общих экстрактах, 1138 в ранних пиках ионно-обменной хроматографии и 1146 в поздних пиках, включая 187 белков матрикса и 53 регулятора внеклеточного матрикса.
+3) Этот подход может изменить практику изучения заболеваний, связанных с нарушением ремоделирования внеклеточного матрикса, таких как аневризмы аорты, позволяя выявлять новые биомаркеры и мишени для терапии.</description>
+    </item>
+    <item>
+      <title>[Efficacy and safety of hydromorphone hydrochloride extended-release tablets in patients with moderate-to-severe chronic cancer pain: a multicenter, double-blind, non-inferiority randomized controlled trial].</title>
+      <link>https://doi.org/10.3760/cma.j.cn112137-20260623-01601</link>
+      <guid isPermaLink="false">8b2bba59834755394a0c96e83bc6a6420bf2188d</guid>
+      <pubDate>Tue, 17 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось сравнение эффективности и безопасности отечественных продленных таблеток гидроморфона с контролируемыми таблетками оксикодона у пациентов с умеренными и тяжёлыми болями при раке.
+2) Гидроморфон в однодневной схеме оказался не хуже оксикодона в двудневной схеме, с изменением показателя «самая сильная боль за последние 24 часа» на -0,87 и -0,92 соответственно.
+3) Это означает, что гидроморфон в продленной форме может быть эффективной и безопасной альтернативой оксикодону для управления умеренными и тяжёлыми болями при раке, с упрощенной схемой приема.</description>
+    </item>
+    <item>
+      <title>Prevalence of benzalkonium chloride tolerance in Listeria monocytogenes isolated from retail meats in Japan.</title>
+      <link>https://doi.org/10.1007/s11259-026-11638-x</link>
+      <guid isPermaLink="false">8c41c1d351399e82baa510f8afab37322ae425a6</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовали распространенность штаммов Listeria monocytogenes, устойчивых к бензалконию хлориду, в розничных мясных продуктах в Японии.
+2) Выявлено, что 18,3% из 93 исследованных штаммов L. monocytogenes были устойчивы к бензалконию хлориду, причем 9,7% содержали кассету bcrABC, которая ассоциирована с повышенной устойчивостью.
+3) Это исследование имеет значение для практики, поскольку подчеркивает необходимость контроля устойчивости к дезинфицирующим средствам, таким как бензалконий хлорид, для эффективного управления рисками пищевых отравлений, вызванных L. monocytogenes.</description>
+    </item>
+    <item>
+      <title>Use of infrared thermography and machine learning to predict the infectious etiology of subclinical bovine mastitis in a robotic milking system.</title>
+      <link>https://doi.org/10.1007/s11250-026-05475-y</link>
+      <guid isPermaLink="false">9c2167fc86ca16d81af871a7dd68ec36ec471e6c</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось применение инфракрасной термографии и машинного обучения для прогнозирования инфекционной этиологии субклинического мастита у коров в роботизированной системе доения.
+2) Было обнаружено, что термографические переменные немного, но значительно улучшают точность модели, а показатель соматических клеток (SCC) дает основную прогностическую информацию, с площадью под кривой ROC 0,96 для бинарной модели и от 0,78 до 0,99 для мультиноминальной модели.
+3) Это может изменить практику ветеринаров, добавляя новый неинвазивный инструмент для мониторинга здоровья вымени и прогнозирования мастита, но требует дальнейшей валидации в независимых стадах и под различными условиями управления.</description>
+    </item>
+    <item>
+      <title>Full-length &amp;#x3b2;-tubulin sequencing of Trichuris trichiura in South Korea reveals novel variants with a conserved benzimidazole-binding pocket.</title>
+      <link>https://doi.org/10.1371/journal.pntd.0014839</link>
+      <guid isPermaLink="false">cab2ec457004329a98c7d03c9d3962cf1ccc83e0</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось генетическое разнообразие паразита Trichuris trichiura в Южной Корее для понимания механизмов резистентности к бензимидазолам.
+2) Были обнаружены две новые нонсинонимные мутации (G308W, A352D) в гене β-тубулина, но не найдены известные мутации, связанные с резистентностью к бензимидазолам, и показано, что новые мутации не влияют на связывание бензимидазолов.
+3) Результаты исследования могут изменить подход к молекулярному мониторингу и контролю Trichuris trichiura в регионах с низким уровнем передачи, подчеркивая важность учета генетического разнообразия и структуры белков для обнаружения потенциальной резистентности.</description>
+    </item>
+    <item>
+      <title>Pharmacological and parasitological approaches in the field-response variability of Ivermectin and Fluazuron against Rhipicephalus microplus under conditions of natural infestation.</title>
+      <link>https://doi.org/10.1007/s11250-026-05470-3</link>
+      <guid isPermaLink="false">e652351f31b50d4a8df32ca27d146ad97df7a31a</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние комбинации Ивермектина и Флуазурона на клещёй Rhipicephalus microplus у коров в условиях естественного заражения.
+2) Главный результат показал, что комбинация Ивермектина 1% и Флуазурона 12,5% имела более эффективное действие, с почти 1,5-кратной разницей между формуляциями Флуазурона.
+3) Это исследование меняет подход к лечению заражения клещами в полевых условиях, подчеркивая важность учета фармакологических и паразитологических факторов для оптимизации протоколов лечения.</description>
+    </item>
+    <item>
+      <title>Oxidative stress-related biochemical alterations in sheep naturally infected with Theileria spp.</title>
+      <link>https://doi.org/10.1007/s11250-026-05480-1</link>
+      <guid isPermaLink="false">142ce8784712d707f00847952610e3b028a5e752</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовали биохимические изменения, связанные со стрессом окисления, у овец, естественно инфицированных Theileria spp.
+2) Инфицированные овцы показали увеличение уровня малондиальдегида и общей сиаловой кислоты, а также снижение уровня глутатиона и активности параоксоназы-1.
+3) Это может изменить подход к диагностике и лечению овечьей тейлериозы, подчеркивая необходимость учета окислительного стресса и воспаления в патогенезе заболевания.</description>
+    </item>
+    <item>
+      <title>Mucosal vaccination with hemagglutinin stalk provides broad protection against influenza virus subtypes in mice.</title>
+      <link>https://doi.org/10.1172/JCI203675</link>
+      <guid isPermaLink="false">c4808feca2a152cbad399809d39e75f0d8d00d79</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние вакцинации через слизистую оболочку с использованием гемагглютинина стебля на защиту от различных подтипов вируса гриппа у мышей.
+2) Главный результат — мыши, вакцинированные через нос с помощью модифицированного гемагглютинина стебля, показали значительную защиту от инфекций H1N1, H5N1, H6N2 и H9N2, с образованием долгосрочных специфических антител и клеточного иммунитета.
+3) Это открытие может изменить подход к разработке универсальной вакцины против гриппа, позволяя создать эффективную и широкоспецифичную защиту против различных подтипов вируса гриппа посредством вакцинации через нос.</description>
+    </item>
+    <item>
+      <title>Detection of previously undescribed seadornavirus-related sequences in Culicoides biting midges collected in Hokkaido, Japan.</title>
+      <link>https://doi.org/10.1292/jvms.26-0430</link>
+      <guid isPermaLink="false">5d3abc11e762bbb1b6e7ca433d8eefdcdc5d0f3d</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось разнообразие РНК-вирусов, связанных с кровососущими комарами Culicoides, собранными в Японии.
+2) Были обнаружены ранее неописанные последовательности, связанные с вирусом seadornavirus, которые были названы Mabiro virus и показали родство с Liao ning virus.
+3) Это открытие расширяет понимание разнообразия вирусов, связанных с комарами Culicoides, и может изменить подходы к контролю и профилактике вирусных заболеваний, передающихся этими комарами.</description>
+    </item>
+    <item>
+      <title>Cross sectional analysis of major viral diseases in shrimp farms of Kerala, India.</title>
+      <link>https://doi.org/10.1007/s00705-026-06791-2</link>
+      <guid isPermaLink="false">168a92204d48d655b0727eedf3d88b21b7e17b74</guid>
+      <pubDate>Mon, 16 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовали распространение основных вирусных заболеваний креветок в фермах штата Керала, Индия.
+2) Основным результатом стало обнаружение вируса белого пятна (WSSV) в 22,6% ферм, при этом другие вирусы не были обнаружены, и выявление факторов риска, включая длительность культуры более 35 дней и высокую плотность посадки.
+3) Это меняет подход к профилактике и контролю заболеваний креветок, подчеркивая важность мониторинга и управления факторами риска для снижения распространения WSSV в фермерских хозяйствах.</description>
+    </item>
+    <item>
+      <title>Duodenal mucosal macrophages and their role in equine inflammatory bowel disease.</title>
+      <link>https://doi.org/10.1002/evj.70365</link>
+      <guid isPermaLink="false">1232e477c222ba0adceb8bc6416cd53c584b6618</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось распределение и поляризация макрофагов в слизистой оболочке двенадцатиперстной кишки лошадей с воспалительным заболеванием кишечника.
+2) Лошади с воспалительным заболеванием кишечника имели более высокие показатели макрофагов в слизистой оболочке, в частности 70,4 ± 24,0 макрофагов на единицу площади в ворсинках против 42,4 ± 18,1 у здоровых лошадей.
+3) Это может изменить подход к диагностике и лечению воспалительного заболевания кишечника у лошадей, подчеркивая важность макрофагов в слизистой оболочке двенадцатиперстной кишки.</description>
+    </item>
+    <item>
+      <title>Comparative Plasma Proteomics of Arabian and Thoroughbred Racehorses at Rest and During Early Recovery from Training and Racing.</title>
+      <link>https://doi.org/10.1016/j.tvjl.2026.106967</link>
+      <guid isPermaLink="false">bf3c5f0ee277160b28064a82d8cae228fdc33b10</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось сравнение плазменных протеомов арабских и чистокровных скаковых лошадей в состоянии покоя и во время раннего восстановления после тренировок и скачек.
+2) Основным результатом стало выявление белков с разной относительной абунданцией у арабских и чистокровных лошадей, включая FETUB, CNTN1, FGFR1 и другие, с изменениями в зависимости от стадии тренировок и возраста.
+3) Эти результаты могут изменить подходы к оценке физиологического состояния и потенциала лошадей разных пород, а также помочь в разработке более эффективных стратегий тренировок и восстановления.</description>
+    </item>
+    <item>
+      <title>Experiences Using a 1.7 mm Locking Bone Plate System for Stabilization of Appendicular Fractures in Dogs and Cats.</title>
+      <link>https://doi.org/10.1055/a-2993-2622</link>
+      <guid isPermaLink="false">11857b83779a3fcb6af819615d897f47f671d716</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось применение системы блокирующих пластин размером 1,7 мм для стабилизации переломов конечностей у собак и кошек.
+2) Полное заживление произошло в 77% случаев, при этом осложнения были зафиксированы в 15% случаев, независимо от метода стабилизации.
+3) Это исследование подтверждает эффективность использования системы Fixin 1,7 мм для стабилизации переломов конечностей у собак и кошек, что может изменить подходы к лечению подобных травм в ветеринарной практике.</description>
+    </item>
+    <item>
+      <title>Risk factors for surgical site infection in clean surgeries at a modern small animal teaching hospital-a prospective observational study.</title>
+      <link>https://doi.org/10.1111/avj.70162</link>
+      <guid isPermaLink="false">0e651117089c1e6d8d075ad64cd5b5de2df9b90a</guid>
+      <pubDate>Sun, 15 Nov 2026 00:00:00 GMT</pubDate>
+      <description>1) Исследовалось влияние различных факторов на развитие послеоперационной инфекции у собак и кошек в условиях современной клиники для мелких животных.
+2) Послеоперационная инфекция развилась в 12% случаев (12 из 102) операций, при этом продолжительность операции была длиннее, а перипературные температуры тела были ниже, чем в предыдущих исследованиях.
+3) Результаты исследования могут изменить подход к оценке рисков послеоперационной инфекции в разных видах хирургических вмешательств, особенно в кожных, ортопедических и нейрохирургических процедурах.</description>
+    </item>
+    <item>
       <title>Effect of modifiable risk factors on cardiovascular and cancer mortality across European and Asian regions: a multicohort study.</title>
       <link>https://doi.org/10.1016/j.lanepe.2026.101918</link>
       <guid isPermaLink="false">98bcfd1397e557d131591598bc5de6ae15109d0a</guid>
@@ -382,141 +517,6 @@
       <description>1) Исследовалось применение спектроскопии АТР-ФТИР в сочетании с машинным обучением для обнаружения биохимических сигнатур, связанных со шистосомозом, в сыворотке крови человека.
 2) Исследование показало точность обнаружения заражения 0,80, чувствительность 0,81 и специфичность 0,79, а также площадь под кривой ROC 0,83.
 3) Это может изменить практику диагностики шистосомоза, предоставив быстрый, не требующий реагентов и минимально инвазивный метод скрининга, который требует дальнейшей валидации в более крупных и географически разнообразных когортах.</description>
-    </item>
-    <item>
-      <title>One battle after another: orthoflavivirus receptors start to be revealed.</title>
-      <link>https://doi.org/10.1016/j.tim.2026.10.009</link>
-      <guid isPermaLink="false">a92a3522587e074052c1c8cee7d389cef9269c4f</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось взаимодействие ортофлавивирусов с рецепторами клеток хозяина.
-2) Были выявлены рецепторы низкой плотности липопротеинов в качестве функциональных рецепторов для входа вируса жёлтой лихорадки и клещёвого энцефалита.
-3) Это открытие может ускорить разработку противовирусных препаратов и вакцин против ортофлавивирусов.</description>
-    </item>
-    <item>
-      <title>Genomic Insights into Early Catheter-Associated UTIs in a Clinical Setting: High-Risk Clones, Hidden Diversity and Limited Catheter-Urine Genomic Divergence.</title>
-      <link>https://doi.org/10.1016/j.jhin.2026.10.027</link>
-      <guid isPermaLink="false">e9c3f0d3579923e9f1b3a94aef9406c23772f0e9</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось геномное разнообразие и устойчивость к антибиотикам бактерий, вызывающих инфекции мочевыводящих путей, связанные с катетером, в клинической обстановке.
-2) Основным результатом стало обнаружение значительного разнообразия бактериальных видов и геномных профилей, с преобладанием Escherichia coli в 57% катетерных и 67% мочевых проб, и выявление высокорисковых клонов с множественной устойчивостью к антибиотикам.
-3) Это исследование меняет подход к диагностике и лечению инфекций мочевыводящих путей, связанных с катетером, подчеркивая важность геномного анализа для выявления высокорисковых клонов и разработки эффективных стратегий контроля инфекций и антибиотикорезистентности.</description>
-    </item>
-    <item>
-      <title>A scoping review of naturally occurring Chandipura virus in animal hosts and arthropod vectors.</title>
-      <link>https://doi.org/10.1371/journal.pntd.0014865</link>
-      <guid isPermaLink="false">63a0838c2014fbc607da1791f90414fc718c6cd6</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовали естественное распространение вируса Chandipura среди животных и членистоногих.
-2) Вирус был обнаружен у песчаных мух в Индии, Сенегале и Кении, а также найдены антитела к вирусу у некоторых видов домашнего скота и диких животных.
-3) Это изменяет подход к наблюдению и контролю за распространением вируса, подчеркивая необходимость комплексного наблюдения и целевых исследований хозяев и переносчиков вируса.</description>
-    </item>
-    <item>
-      <title>One health molecular epidemiology of carbapenem- and colistin-resistant Escherichia coli sequence types in humans, poultry, and the environment in Pakistan.</title>
-      <link>https://doi.org/10.1007/s11033-026-13132-8</link>
-      <guid isPermaLink="false">f711e2fbb498d1e9e427be3dc4230556f3eb47e6</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовали распространение карбапенем- и колистин-резистентных штаммов Escherichia coli у людей, птиц и в окружающей среде в Пакистане.
-2) Было обнаружено 27 карбапенем-резистентных и 3 колистин-резистентных штамма у людей, 38 карбапенем-резистентных и 5 колистин-резистентных в окружающей среде, и 25 колистин-резистентных у птиц, с преобладанием определенных секвенционных типов, таких как ST101, ST131 и ST405.
-3) Это исследование подчеркивает взаимосвязанную природу антибиотикорезистентности и необходимость комплексного подхода к борьбе с высокорисковыми мультидругрезистентными бактериальными штаммами в человеческой, птицеводческой и окружающей среде.</description>
-    </item>
-    <item>
-      <title>Biofilm-responsive nanogels: a closed-loop system for on-demand antimicrobial release for chronic wounds.</title>
-      <link>https://doi.org/10.1007/s00604-026-08513-6</link>
-      <guid isPermaLink="false">5d6c024d6c0270eb76f74c7867ef2f646a28dd1d</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось применение наногелей для лечения хронических ран, инфицированных биоплёнками, с целью создания системы контролируемого выпуска противомикробных препаратов.
-2) Главный результат — разработка наногелей, реагирующих на физиологические изменения в окружении хронической раны, что позволяет обеспечить целевое и контролируемое выпускание лекарств.
-3) Это может изменить подход к лечению хронических ран, обеспечивая более эффективное и целевое воздействие на биоплёнки и микроорганизмы, снижая риск развития антибиотикорезистентности.</description>
-    </item>
-    <item>
-      <title>Molecular characterization of virulence-associated factors and antimicrobial resistance determinants in Arcobacter butzleri isolated from seafood of the Mumbai coast, India.</title>
-      <link>https://doi.org/10.1007/s00203-026-05302-w</link>
-      <guid isPermaLink="false">f459eaa50c7c52757fc0d49b97f2333de29c8f77</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось распространение и генетические особенности бактерии Arcobacter butzleri в морепродуктах, взятых из прибрежных вод Мумбаи, Индия.
-2) Было обнаружено, что 62,86% образцов содержали A. butzleri, при этом доминировали гены tlyA, cadF, ciaB, mviN и pldA, а также выявлена высокая распространенность антибиотикорезистентных генов, таких как OXA-464 и macA.
-3) Это исследование подчеркивает необходимость постоянного контроля и соблюдения гигиенических норм при обращении с морепродуктами, поскольку они могут быть носителями патогенных и антибиотикорезистентных бактерий A. butzleri.</description>
-    </item>
-    <item>
-      <title>N-acetylcysteine reduces systemic oxidative stress and inflammation but confers limited organ protection and partial modulation of hepatic ferroptosis and pyroptosis in experimental sepsis.</title>
-      <link>https://doi.org/10.1007/s11033-026-13124-8</link>
-      <guid isPermaLink="false">ebb96a21a25da5a8be547a88663ecc8e8d88c83b</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось влияние N-ацетилцистеина (NAC) на систёмный окислительный стресс и воспаление при экспериментальной сепсисе у крыс.
-2) NAC в дозах 200 и 400 мг/кг/день снижал систёмные окислительные и воспалительные показатели, но не демонстрировал последовательной защиты органов и тканей.
-3) Это исследование может изменить подход к использованию NAC в ветеринарной практике, поскольку оно показывает, что NAC может снизить систёмный окислительный стресс и воспаление, но не обеспечивает полной защиты органов и тканей при сепсисе.</description>
-    </item>
-    <item>
-      <title>Chemical Determinants of Spinal Analgesia in NTS2-Selective Macrocycles.</title>
-      <link>https://doi.org/10.1021/acs.jmedchem.6c01670</link>
-      <guid isPermaLink="false">f5be901548c7bd437b712801aca7b4d16d9e60c4</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось влияние макроциклических аналогов нейротензина на спинальную анальгезию и их селективность к рецептору NTS2.
-2) Был выявлен аналог M19 с более чем 53 000-кратной селективностью к NTS2 по сравнению с NTS1, а также найдено, что удаление N-концевой аминогруппы приводит к потере анальгетической активности.
-3) Это открытие меняет подход к разработке неопиоидных анальгетиков, направляя внимание на создание селективных лигандов для рецептора NTS2 с сохранением критически важной N-концевой аминогруппы.</description>
-    </item>
-    <item>
-      <title>Pain management for the twenty-first century - reports from the 2025 meeting.</title>
-      <link>https://doi.org/10.1080/17581869.2026.2753720</link>
-      <guid isPermaLink="false">8d49c20f4e7a9b9820678d3cd3cbf3778ef2252c</guid>
-      <pubDate>Thu, 12 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось управление болью в XXI веке на конференции в Королевском Марсдене.
-2) Были представлены новые данные о применении опиоидов, каннабиноидов, габапентеноидов и психоделиков для обезболивания, а также обсуждены инновационные методы, такие как внутрипозвоночные насосы и блокаторы натриевых каналов.
-3) Это расширяет возможности ветеринарных врачей в управлении болью у животных, включая новые методы и подходы к лечению боли.</description>
-    </item>
-    <item>
-      <title>Improving Genome Annotation of the Animal Trypanosomiasis (surra) Pathogen Trypanosoma evansi Using the Proteogenomics Approach.</title>
-      <link>https://doi.org/10.1007/s11686-026-01441-8</link>
-      <guid isPermaLink="false">6c843da2e38b6c2bb694c7521361885f8d3f4088</guid>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось геномное аннотирование патогена Trypanosoma evansi, вызывающего болезнь сурра у животных.
-2) Были выявлены 24 новых белок-кодирующих гена и получено экспериментальное подтверждение ранее нехарактеризированных геномных особенностей, включая 182 области, ранее классифицированные как псевдогены.
-3) Это исследование меняет подход к диагностике и разработке потенциальных терапий против сурры, предоставляя более полное понимание биологии Trypanosoma evansi и его механизмов иммунного уклонения.</description>
-    </item>
-    <item>
-      <title>Expanded Evaluation of a Commercial Immunofluorescence Kit for Detecting Microsporidia In Vitro</title>
-      <link>https://doi.org/10.1099/acmi.0.001240.v3</link>
-      <guid isPermaLink="false">93d4ea8f6f422954bc6521cfdc7f34ef3bd419ae</guid>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось применение коммерческого набора для иммунофлуоресценции для обнаружения микроспоридий в vitro.
-2) Набор показал сильные флуоресцентные сигналы для Encephalitozoon cuniculi и Encephalitozoon intestinalis, с минимальной концентрацией обнаружения 10³ спор/мл.
-3) Это может изменить практику ветеринарной медицины, позволяя использовать этот набор для обнаружения E. cuniculi в условиях лаборатории, особенно в тех, где доступ к молекулярным методам диагностики ограничен.</description>
-    </item>
-    <item>
-      <title>Apramycin resistance in bacteria isolated from humans, a systematic review and meta-analysis</title>
-      <link>https://doi.org/10.1099/acmi.0.001227.v2</link>
-      <guid isPermaLink="false">00dd3481f5b002da5cf68c05b76c81bccdce2d8e</guid>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось развитие резистентности к антибиотику апрамицину у бактерий, выделенных из людей.
-2) Уровень резистентности к апрамицину составил 6% для E. coli, 1% для Acinetobacter spp и варьировался для других бактерий, при этом для Salmonella spp резистентность не была обнаружена.
-3) Результаты исследования поддерживают возможность повторного использования апрамицина для лечения людей, поскольку резистентность к этому антибиотику у бактерий человека оказалась редкой, несмотря на почти 50-летнее использование апрамицина в ветеринарии.</description>
-    </item>
-    <item>
-      <title>TLR5 signaling amplifies airway epithelial cell responses to influenza through a MyD88–JAK1 crosstalk</title>
-      <link>https://doi.org/10.21203/rs.3.rs-11049330/v1</link>
-      <guid isPermaLink="false">25568f1716c178912115dbd0ac68a7a374ed9446</guid>
-      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось влияние активации TLR5 на защиту против вируса гриппа в эпителиальных клетках дыхательных путей.
-2) Активация TLR5 с помощью флагеллина увеличивала чувствительность клеток к интерферону типа I и снижала репликацию вируса при меньших концентрациях интерферона.
-3) Это открытие может изменить подход к защите против вируса гриппа, позволяя использовать активацию TLR5 в качестве нового, независимого от штамма метода усиления противовирусной защиты.</description>
-    </item>
-    <item>
-      <title>The phototoxicity of certain dyes against the West Nile vector, Culex pipiens larvae ( Diptera: Culicidae ).</title>
-      <link>https://doi.org/10.1080/03601234.2026.2759092</link>
-      <guid isPermaLink="false">c3499baf4bc8a5503c5164ba1cf8893e192d3227</guid>
-      <pubDate>Tue, 10 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовали фототоксичность трёх красителей (ализаринового красного, бромтимолового синего и метиленового синего) против личинок комаров Culex pipiens.
-2) Бромтимоловый синий показал наибольшую фотодинамическую токсичность с LC 50 0,0026 мг/л, что в 238,88 раза более эффективно, чем хлорпирифос.
-3) Это открытие может изменить практику борьбы с комарами, предоставив альтернативу традиционным инсектицидам и потенциально внося вклад в интегрированные программы управления.</description>
-    </item>
-    <item>
-      <title>Coagulopathic manifestations as a primary presentation of canine angiostrongylosis: a retrospective case series.</title>
-      <link>https://doi.org/10.2460/javma.26.06.0468</link>
-      <guid isPermaLink="false">8d729e31889b659a523b91543df6e38f0f87312b</guid>
-      <pubDate>Fri, 06 Nov 2026 00:00:00 GMT</pubDate>
-      <description>1) Исследовалось проявление коагулопатии как первичной симптоматики при ангийостронгилозе у собак.
-2) У 3 собак с подтвержденным диагнозом ангийостронгилоза наблюдались коагулопатические проявления, включая тромбоцитопению, продленные время свертывания крови и повышенные концентрации D-димера.
-3) Это исследование меняет подход к диагностике коагулопатии у собак, подчеркивая необходимость включения ангийостронгилоза в дифференциальную диагностику, даже при отсутствии респираторных симптомов.</description>
     </item>
   </channel>
 </rss>
